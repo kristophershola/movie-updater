@@ -1087,29 +1087,24 @@ async function downloadJSON() {
   btn.textContent = 'Saving...';
 
   try {
-    if (fileHandle) {
-      // Write directly back to the same file
-      const writable = await fileHandle.createWritable();
-      await writable.write(json);
-      await writable.close();
-      showToast('movies.json saved', 'green');
-    } else {
-      // No handle — fall back to regular download
-      const blob = new Blob([json], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'movies.json'; a.click();
-      URL.revokeObjectURL(url);
-      showToast('Downloaded movies.json', 'green');
+    const res = await fetch('/.netlify/functions/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: json,
+    });
+    const data = await res.json().catch(() => null);
+    if (!res.ok || !data || !data.ok) {
+      throw new Error((data && data.error) || `HTTP ${res.status}`);
     }
+    showToast('movies.json saved to GitHub', 'green');
   } catch (e) {
-    // User may have denied write permission — try download fallback
+    // Fallback: download the file manually
     const blob = new Blob([json], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url; a.download = 'movies.json'; a.click();
     URL.revokeObjectURL(url);
-    showToast('Saved as download (write denied)', 'gold');
+    showToast(`Save failed (${e.message}) - downloaded instead`, 'gold');
   }
 
   btn.disabled = false;
