@@ -25,16 +25,6 @@
       "tmdb_id": 980431
     },
     {
-      "title": "Heartstopper Forever",
-      "genres": "Drama, Romance",
-      "poster": "https://image.tmdb.org/t/p/w500/ch28kJu4pG2x07sN22valXvV3JY.jpg",
-      "overview": "It's a new school year for the Truham-Higgs gang. As Nick and Charlie's relationship deepens, their thoughts turn to life after the last bell rings.",
-      "rating": 7.3,
-      "year": "2026",
-      "release_date": "2026-07-14",
-      "tmdb_id": 1468683
-    },
-    {
       "title": "Ikka",
       "genres": "Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/fp5EAKE8nTx402n1fWz55QsuYY9.jpg",
@@ -1003,6 +993,16 @@
       "year": "2025",
       "release_date": "2025-04-09",
       "tmdb_id": 1241436
+    },
+    {
+      "title": "The Dink",
+      "genres": "Comedy",
+      "poster": null,
+      "overview": "",
+      "rating": null,
+      "year": "",
+      "release_date": "2026-07-23",
+      "tmdb_id": 1361774
     }
   ]
 }
