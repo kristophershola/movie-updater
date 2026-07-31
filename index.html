@@ -1203,8 +1203,31 @@ document.getElementById('addGenres').addEventListener('keydown', e => {
   if (e.key === 'Enter') addMovie();
 });
 
+// ---- AUTO-LOAD MOVIES.JSON ----
+async function loadMoviesFromHost() {
+  try {
+    const res = await fetch(`movies.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (data.movies && Array.isArray(data.movies)) {
+      movies = data.movies.map(m => {
+        const entry = { title: m.title, genres: m.genres };
+        if (m.tmdb_id) entry.tmdb_id = m.tmdb_id;
+        return entry;
+      });
+      fetchedData = data;
+      document.getElementById('downloadBtn').style.display = '';
+      renderList();
+      showToast(`Loaded ${movies.length} movies from server`, 'green');
+    }
+  } catch (e) {
+    showToast('Could not load movies.json - starting with default list', 'gold');
+  }
+}
+
 // ---- INIT ----
 renderList();
+loadMoviesFromHost();
 </script>
 </body>
 </html>
