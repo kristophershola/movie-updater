@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lavish Cinemas - Movie List Updater</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #080808;
+  --deep: #0d0d0d;
+  --surface: #141414;
+  --surface2: #1c1c1c;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.12);
+  --gold: #c9a84c;
+  --gold-dim: rgba(201,168,76,0.12);
+  --gold-hover: rgba(201,168,76,0.2);
+  --white: #f0ebe0;
+  --muted: rgba(240,235,224,0.4);
+  --danger: #c0392b;
+  --danger-dim: rgba(192,57,43,0.12);
+  --success: #27ae60;
+  --success-dim: rgba(39,174,96,0.12);
+  --radius: 5px;
+}
+
+html, body { height: 100%; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: var(--deep);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+}
+
+.logo-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BUTTONS */
+.btn {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.18s;
+  white-space: nowrap;
+}
+
+.btn:hover { color: var(--white); border-color: rgba(255,255,255,0.2); }
+
+.btn-gold {
+  background: var(--gold-dim);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.btn-gold:hover {
+  background: var(--gold-hover);
+  color: var(--gold);
+}
+
+.btn-gold:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  background: var(--danger-dim);
+  border-color: var(--danger);
+  color: var(--danger);
+  padding: 6px 10px;
+  font-size: 9px;
+}
+
+.btn-danger:hover { background: rgba(192,57,43,0.22); color: var(--danger); }
+
+.btn-success {
+  background: var(--success-dim);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.btn-success:hover { background: rgba(39,174,96,0.22); }
+
+/* LAYOUT */
+.main {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* LEFT PANEL */
+.panel-left {
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--deep);
+}
+
+.panel-section {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.panel-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+/* ADD MOVIE FORM */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 9px 12px;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.18s;
+}
+
+.form-input::placeholder { color: var(--muted); font-size: 11px; }
+.form-input:focus { border-color: var(--gold); }
+
+.form-hint {
+  font-size: 10px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* IMPORT */
+.import-area {
+  border: 1px dashed var(--border2);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.18s;
+  position: relative;
+}
+
+.import-area:hover { border-color: rgba(201,168,76,0.35); background: var(--gold-dim); }
+
+.import-area input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.import-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  pointer-events: none;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.stat-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+}
+
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  margin-top: 3px;
+}
+
+/* PROGRESS */
+.progress-section {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  display: none;
+}
+
+.progress-section.visible { display: block; }
+
+.progress-status {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.progress-track {
+  height: 2px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--gold);
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.progress-log {
+  max-height: 100px;
+  overflow-y: auto;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.log-ok { color: #4caf50; }
+.log-miss { color: #ff9800; }
+.log-err { color: var(--danger); }
+
+/* RIGHT PANEL - MOVIE LIST */
+.panel-right {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.list-header {
+  padding: 16px 28px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background: var(--deep);
+}
+
+.search-wrap {
+  position: relative;
+  width: 220px;
+}
+
+.search-wrap input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 8px 12px 8px 34px;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.18s;
+}
+
+.search-wrap input:focus { border-color: var(--gold); }
+.search-wrap input::placeholder { color: var(--muted); }
+
+.search-wrap svg {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.movie-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.movie-list::-webkit-scrollbar { width: 4px; }
+.movie-list::-webkit-scrollbar-track { background: transparent; }
+.movie-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 4px; }
+
+.movie-row {
+  display: grid;
+  grid-template-columns: 32px 1fr auto auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 28px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+  animation: slideIn 0.2s ease both;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.movie-row:hover { background: var(--surface); }
+
+.movie-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.movie-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-genres {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 260px;
+}
+
+.movie-fetched {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  width: 20px;
+  text-align: center;
+}
+
+.movie-fetched.ok { color: #4caf50; }
+.movie-fetched.miss { color: #ff9800; }
+
+.movie-row-info {
+  min-width: 0;
+}
+
+.btn-pin {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--muted);
+  font-size: 11px;
+  padding: 4px 7px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.05em;
+}
+.btn-pin:hover { border-color: var(--border2); color: var(--white); }
+.btn-pin.pinned { color: var(--gold); border-color: rgba(201,168,76,0.3); }
+
+.pin-popover {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  min-width: 260px;
+}
+.pin-popover.open { display: block; }
+.pin-popover-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.pin-popover-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 232px;
+}
+.pin-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.pin-input {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  color: var(--white);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.pin-input:focus { border-color: var(--gold); }
+.pin-input::placeholder { color: var(--muted); }
+.pin-confirm {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  padding: 7px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--gold);
+  background: var(--gold-dim);
+  color: var(--gold);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.pin-confirm:hover { background: var(--gold-hover); }
+.pin-clear {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border2);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.pin-clear:hover { color: var(--danger); border-color: var(--danger); }
+.pin-hint {
+  font-size: 9px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* TOAST */
+.toast {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--white);
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.toast.show { opacity: 1; transform: translateY(0); }
+.toast.gold { border-color: var(--gold); color: var(--gold); }
+.toast.green { border-color: var(--success); color: var(--success); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo">Lavish Cinemas</div>
+    <div class="logo-sub">Movie List Manager</div>
+  </div>
+  <div class="header-actions">
+    <button class="btn" onclick="sortAlpha()">Sort A-Z</button>
+    <button class="btn" id="sortDateBtn" onclick="sortByDate()">Sort: Newest First</button>
+    <button class="btn btn-gold" id="fetchBtn" onclick="fetchAll()">Fetch from TMDB</button>
+    <button class="btn btn-success" id="downloadBtn" onclick="downloadJSON()" style="display:none">Save movies.json</button>
+  </div>
+</header>
+
+<div class="main">
+
+  <!-- LEFT PANEL -->
+  <div class="panel-left">
+
+    <!-- STATS -->
+    <div class="panel-section">
+      <div class="panel-label">List Summary</div>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-num" id="statTotal">0</div>
+          <div class="stat-label">Total Movies</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num" id="statFetched" style="color:var(--muted)">0</div>
+          <div class="stat-label">Fetched from TMDB</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD MOVIE -->
+    <div class="panel-section">
+      <div class="panel-label">Add Movie</div>
+      <div class="form-row">
+        <input class="form-input" id="addTitle" type="text" placeholder="Movie title (as it appears on TMDB)">
+        <input class="form-input" id="addGenres" type="text" placeholder="Genres (e.g. Action, Thriller)">
+        <div style="position:relative">
+          <input class="form-input" id="addTmdbId" type="text" placeholder="TMDB ID — autofills title &amp; genres" style="padding-right:70px" oninput="handleTmdbIdInput()" onblur="autofillFromId()">
+          <span id="autofillStatus" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);pointer-events:none"></span>
+        </div>
+        <p class="form-hint">Enter a TMDB ID to autofill title and genres. Find the ID in the movie URL on themoviedb.org.</p>
+      </div>
+      <button class="btn btn-gold" style="width:100%" onclick="addMovie()">Add to List</button>
+    </div>
+
+    <!-- OPEN FILE -->
+    <div class="panel-section">
+      <div class="panel-label">File</div>
+      <button class="btn" id="openFileBtn" style="width:100%;margin-bottom:6px" onclick="openFile()">Open movies.json</button>
+      <div id="openFileStatus" style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:0.08em;min-height:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></div>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="progress-section" id="progressSection">
+      <div class="panel-label">Fetch Progress</div>
+      <div class="progress-status" id="progressStatus">Preparing...</div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-log" id="progressLog"></div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel-right">
+
+    <div class="list-header">
+      <div class="search-wrap">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="text" id="listSearch" placeholder="Filter list..." oninput="renderList()">
+      </div>
+      <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)" id="listCount"></span>
+    </div>
+
+    <div class="movie-list" id="movieList"></div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- PIN POPOVER -->
+<div class="pin-popover" id="pinPopover">
+  <div class="pin-popover-label">Pin TMDB ID</div>
+  <div class="pin-popover-title" id="pinPopoverTitle"></div>
+  <div class="pin-row">
+    <input class="pin-input" id="pinInput" type="text" placeholder="e.g. 792307">
+    <button class="pin-confirm" onclick="confirmPin()">Set</button>
+    <button class="pin-clear" onclick="clearPin()">Clear</button>
+  </div>
+  <div class="pin-hint">Find the ID in the TMDB URL:<br>themoviedb.org/movie/<strong style="color:var(--gold)">792307</strong>-...</div>
+</div>
+
+<script>
+const TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMWIxNDdhNjVlM2U5Mzk1OTEwOTE1ZDdlOWY1NGYwOSIsIm5iZiI6MTc2MzQ1Nzk5OS4wODA5OTk5LCJzdWIiOiI2OTFjM2JjZmFiMjNhMTcyZmZjN2Q3YTIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.a8EnUf6FK6bGhyGXSo7EquNRsYbW72uAKPIO_NfGISc';
+const IMG_BASE = 'https://image.tmdb.org/t/p/w500';
+const HEADERS = { Authorization: `Bearer ${TOKEN}` };
+
+// ---- GENRE SCORING ----
+const TMDB_GENRES = {
+  28:'Action', 12:'Adventure', 16:'Animation', 35:'Comedy', 80:'Crime',
+  99:'Documentary', 18:'Drama', 10751:'Family', 14:'Fantasy', 36:'History',
+  27:'Horror', 10402:'Music', 9648:'Mystery', 10749:'Romance', 878:'Science Fiction',
+  53:'Thriller', 10752:'War', 37:'Western'
+};
+
+function bestMatch(results, storedGenres) {
+  if (!results?.length) return null;
+  const stored = storedGenres.toLowerCase().split(',').map(g => g.trim());
+  const scored = results.slice(0, 5).map(r => {
+    const tmdbGenres = (r.genre_ids || []).map(id => (TMDB_GENRES[id] || '').toLowerCase());
+    const score = stored.filter(g => tmdbGenres.includes(g)).length;
+    return { r, score };
+  });
+  scored.sort((a, b) => b.score - a.score);
+  return scored[0].r;
+}
+
+let movies = [
+  { title: 'A Minecraft Movie', genres: 'Family, Fantasy, Comedy, Adventure' },
+  { title: 'Anaconda', genres: 'Adventure, Comedy, Horror' },
+  { title: 'Being Eddie', genres: 'Documentary' },
+  { title: 'Black Phone 2', genres: 'Horror, Thriller' },
+  { title: 'Bone Lake', genres: 'Horror, Mystery, Thriller' },
+  { title: 'Caught Stealing', genres: 'Crime, Thriller, Comedy' },
+  { title: 'Chainsaw Man: The Movie - Reze Arc', genres: 'Animation, Action, Romance, Fantasy' },
+  { title: 'Cleaner', genres: 'Action, Thriller' },
+  { title: 'Clown in a Cornfield', genres: 'Horror, Mystery, Thriller' },
+  { title: 'Cold Storage', genres: 'Horror, Science Fiction, Comedy' },
+  { title: 'Death of a Unicorn', genres: 'Horror, Fantasy, Comedy' },
+  { title: 'Demon Slayer: Kimetsu no Yaiba Infinity Castle', genres: 'Animation, Action, Fantasy' },
+  { title: 'Den of Thieves 2: Pantera', genres: 'Action, Crime, Thriller' },
+  { title: 'Drop', genres: 'Mystery, Thriller' },
+  { title: 'Elevation', genres: 'Action, Science Fiction, Thriller' },
+  { title: 'Elio', genres: 'Animation, Family, Science Fiction, Adventure, Comedy' },
+  { title: 'Everybody Loves Jenifa', genres: 'Action, Comedy' },
+  { title: 'F1', genres: 'Action, Drama' },
+  { title: 'Fear Below', genres: 'Horror, Action, Adventure, Thriller' },
+  { title: 'Final Destination: Bloodlines', genres: 'Horror, Mystery' },
+  { title: 'Flight Risk', genres: 'Action, Thriller' },
+  { title: 'Freakier Friday', genres: 'Comedy, Fantasy, Family' },
+  { title: 'From the World of John Wick: Ballerina', genres: 'Action, Thriller, Crime' },
+  { title: 'Gladiator II', genres: 'Action, Adventure, Drama' },
+  { title: 'Good Boy', genres: 'Thriller, Drama, Mystery' },
+  { title: 'Greenland 2: Migration', genres: 'Adventure, Thriller, Science Fiction' },
+  { title: 'Heads of State', genres: 'Action, Thriller, Comedy' },
+  { title: 'Heart Eyes', genres: 'Horror, Comedy, Romance' },
+  { title: 'Heretic', genres: 'Thriller, Horror' },
+  { title: 'How to Train Your Dragon', genres: 'Fantasy, Family, Action, Adventure' },
+  { title: 'Icefall', genres: 'Action, Crime, Thriller' },
+  { title: 'It Ends with Us', genres: 'Drama, Romance' },
+  { title: 'Jurassic World Rebirth', genres: 'Science Fiction, Adventure, Action' },
+  { title: 'Juror #2', genres: 'Drama, Thriller' },
+  { title: 'Karate Kid: Legends', genres: 'Action, Adventure, Drama' },
+  { title: 'Kraven the Hunter', genres: 'Action, Adventure, Thriller' },
+  { title: 'Last Breath', genres: 'Thriller, Drama' },
+  { title: 'Lilo & Stitch', genres: 'Family, Science Fiction, Comedy' },
+  { title: 'Lurker', genres: 'Drama, Thriller' },
+  { title: 'M3GAN 2.0', genres: 'Action, Science Fiction, Thriller' },
+  { title: 'Magazine Dreams', genres: 'Drama' },
+  { title: 'Mickey 17', genres: 'Science Fiction, Comedy, Adventure' },
+  { title: 'Mission: Impossible - The Final Reckoning', genres: 'Action, Thriller, Adventure' },
+  { title: 'Moana 2', genres: 'Animation, Adventure, Family, Comedy, Fantasy' },
+  { title: 'Mufasa: The Lion King', genres: 'Adventure, Family, Animation' },
+  { title: 'Nosferatu', genres: 'Horror, Fantasy' },
+  { title: 'Novocaine', genres: 'Action, Comedy, Thriller' },
+  { title: "Now You See Me: Now You Don't", genres: 'Crime, Thriller' },
+  { title: 'One Battle After Another', genres: 'Thriller, Crime, Comedy' },
+  { title: 'One of Them Days', genres: 'Comedy' },
+  { title: 'Opus', genres: 'Horror, Mystery, Thriller' },
+  { title: 'Paddington in Peru', genres: 'Family, Comedy, Adventure' },
+  { title: 'Predator: Badlands', genres: 'Action, Science Fiction, Adventure' },
+  { title: 'Return to Silent Hill', genres: 'Mystery, Drama, Horror' },
+  { title: 'Rust', genres: 'Western, Action, Drama' },
+  { title: 'Saiyaara', genres: 'Romance, Drama, Music' },
+  { title: 'Scream 7', genres: 'Horror, Mystery, Crime' },
+  { title: 'Screamboat', genres: 'Horror, Comedy' },
+  { title: 'Shelter', genres: 'Action, Crime, Thriller' },
+  { title: 'Sinners', genres: 'Horror, Action, Thriller' },
+  { title: 'Sisu: Road to Revenge', genres: 'Action, War' },
+  { title: 'Smile 2', genres: 'Horror, Mystery, Music' },
+  { title: 'Sniper: The Last Stand', genres: 'Action, Thriller' },
+  { title: 'Snow White', genres: 'Family, Fantasy' },
+  { title: 'Sonic the Hedgehog 3', genres: 'Action, Science Fiction, Comedy, Family' },
+  { title: 'Straw', genres: 'Thriller, Drama, Crime' },
+  { title: 'Superman', genres: 'Science Fiction, Adventure, Action' },
+  { title: 'The Accountant 2', genres: 'Mystery, Crime, Thriller' },
+  { title: 'The Alto Knights', genres: 'Crime, Drama, History' },
+  { title: 'The Amateur', genres: 'Thriller, Action' },
+  { title: 'The Bad Guys 2', genres: 'Family, Comedy, Crime, Adventure, Animation' },
+  { title: 'The Conjuring: Last Rites', genres: 'Horror' },
+  { title: 'The Electric State', genres: 'Science Fiction, Adventure, Action' },
+  { title: 'The Fantastic Four: First Steps', genres: 'Science Fiction, Adventure, Action' },
+  { title: 'The Gorge', genres: 'Romance, Science Fiction, Thriller' },
+  { title: 'The Herd', genres: 'Horror' },
+  { title: 'The Home', genres: 'Mystery, Horror, Thriller' },
+  { title: 'The King of Kings', genres: 'Animation, Family, Fantasy, Drama, Adventure' },
+  { title: 'The Long Walk', genres: 'Science Fiction, Thriller, Horror' },
+  { title: 'The Lord of the Rings: War of the Rohirrim', genres: 'Animation, Fantasy, Adventure, Action' },
+  { title: 'The Monkey', genres: 'Horror, Comedy' },
+  { title: 'The Occupant', genres: 'Science Fiction, Drama, Thriller' },
+  { title: 'The Running Man', genres: 'Action, Thriller, Science Fiction' },
+  { title: 'The Smashing Machine', genres: 'Drama, History' },
+  { title: 'The Strangers: Chapter 2', genres: 'Horror, Thriller' },
+  { title: 'The Strangers: Chapter 3', genres: 'Horror, Thriller' },
+  { title: 'The Woman in the Yard', genres: 'Horror, Mystery' },
+  { title: 'The Wrecking Crew', genres: 'Action, Comedy, Crime, Mystery' },
+  { title: 'Thunderbolts', genres: 'Action, Science Fiction, Adventure' },
+  { title: 'Together', genres: 'Horror, Romance' },
+  { title: 'Tron: Ares', genres: 'Science Fiction, Adventure, Action' },
+  { title: 'Until Dawn', genres: 'Horror, Mystery' },
+  { title: 'Venom: The Last Dance', genres: 'Science Fiction, Action, Adventure' },
+  { title: 'Warfare', genres: 'War, Action' },
+  { title: 'We Live in Time', genres: 'Romance, Drama' },
+  { title: 'Weapons', genres: 'Horror, Mystery' },
+  { title: 'Werewolves', genres: 'Action, Horror, Thriller, Science Fiction' },
+  { title: 'Wicked', genres: 'Drama, Romance, Fantasy' },
+  { title: 'Wicked: For Good', genres: 'Fantasy, Adventure, Romance' },
+  { title: 'Zootopia 2', genres: 'Animation, Family, Mystery, Adventure, Comedy' },
+];
+
+let fetchedData = null;
+let isFetching = false;
+let dateSortOrder = 'desc'; // 'desc' = newest first, 'asc' = oldest first
+
+// ---- RENDER ----
+function renderList() {
+  const q = document.getElementById('listSearch').value.toLowerCase();
+  const filtered = movies.filter(m => m.title.toLowerCase().includes(q));
+  const list = document.getElementById('movieList');
+
+  document.getElementById('listCount').textContent = `${filtered.length} of ${movies.length}`;
+  updateStats();
+
+  list.innerHTML = filtered.map((m, i) => {
+    const realIndex = movies.indexOf(m);
+    const fd = fetchedData?.movies?.find(f => f.title === m.title);
+    const fetchedMark = fetchedData
+      ? (fd?.tmdb_id
+          ? `<span class="movie-fetched ok" title="Found on TMDB">✓</span>`
+          : `<span class="movie-fetched miss" title="Not found on TMDB">?</span>`)
+      : '';
+    const pinned = !!m.tmdb_id;
+    const pinBtn = `<button class="btn-pin ${pinned ? 'pinned' : ''}" onclick="openPin(event,${realIndex})" title="${pinned ? 'Pinned: ID ' + m.tmdb_id : 'Pin TMDB ID'}">${pinned ? '⚑ ' + m.tmdb_id : '⚐'}</button>`;
+    return `
+      <div class="movie-row" style="animation-delay:${Math.min(i,30)*15}ms">
+        <span class="movie-num">${realIndex + 1}</span>
+        <div class="movie-row-info">
+          <div class="movie-title">${m.title}</div>
+          <div class="movie-genres">${m.genres}</div>
+        </div>
+        ${pinBtn}
+        ${fetchedMark}
+        <button class="btn btn-danger" onclick="removeMovie(${realIndex})" title="Remove">✕</button>
+      </div>
+    `;
+  }).join('');
+}
+
+function updateStats() {
+  document.getElementById('statTotal').textContent = movies.length;
+  const fetched = fetchedData ? fetchedData.movies.filter(f => f.tmdb_id).length : 0;
+  const statEl = document.getElementById('statFetched');
+  statEl.textContent = fetched;
+  statEl.style.color = fetched > 0 ? 'var(--gold)' : 'var(--muted)';
+}
+
+// ---- ADD / REMOVE ----
+function addMovie() {
+  const titleEl = document.getElementById('addTitle');
+  const genresEl = document.getElementById('addGenres');
+  const tmdbIdEl = document.getElementById('addTmdbId');
+  const title = titleEl.value.trim();
+  const genres = genresEl.value.trim();
+  const tmdbId = parseInt(tmdbIdEl.value.trim()) || null;
+
+  if (!title) { showToast('Please enter a movie title.'); return; }
+  if (!genres) { showToast('Please enter at least one genre.'); return; }
+
+  const exists = movies.some(m => m.title.toLowerCase() === title.toLowerCase());
+  if (exists) { showToast('Movie already in the list.'); return; }
+
+  const entry = { title, genres };
+  if (tmdbId) entry.tmdb_id = tmdbId;
+  movies.push(entry);
+  fetchedData = null;
+  document.getElementById('downloadBtn').style.display = 'none';
+  titleEl.value = '';
+  genresEl.value = '';
+  tmdbIdEl.value = '';
+  renderList();
+  showToast(`Added: ${title}`, 'gold');
+
+  // scroll list to bottom
+  const list = document.getElementById('movieList');
+  setTimeout(() => list.scrollTop = list.scrollHeight, 50);
+}
+
+function removeMovie(index) {
+  const title = movies[index].title;
+  movies.splice(index, 1);
+  if (fetchedData) {
+    fetchedData.movies = fetchedData.movies.filter(m => m.title !== title);
+    fetchedData.total = movies.length;
+  }
+  renderList();
+  showToast(`Removed: ${title}`);
+}
+
+function sortAlpha() {
+  movies.sort((a, b) => a.title.localeCompare(b.title));
+  renderList();
+  showToast('Sorted A-Z', 'gold');
+}
+
+// ---- SORT BY RELEASE DATE ----
+async function sortByDate() {
+  const btn = document.getElementById('sortDateBtn');
+
+  // Build a map of title -> release_date from already-fetched data
+  let dateMap = {};
+  if (fetchedData) {
+    fetchedData.movies.forEach(m => {
+      if (m.release_date) dateMap[m.title] = m.release_date;
+    });
+  }
+
+  // Find movies that still need a date
+  const missing = movies.filter(m => !dateMap[m.title]);
+
+  if (missing.length > 0) {
+    btn.disabled = true;
+    btn.textContent = 'Fetching dates...';
+
+    const BATCH = 5;
+    const DELAY = 250;
+
+    for (let i = 0; i < missing.length; i += BATCH) {
+      const batch = missing.slice(i, i + BATCH);
+      await Promise.all(batch.map(async movie => {
+        try {
+          const res = await fetch(
+            `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movie.title)}&include_adult=false&language=en-US&page=1`,
+            { headers: HEADERS }
+          );
+          const data = await res.json();
+          const result = data.results?.[0];
+          if (result?.release_date) {
+            dateMap[movie.title] = result.release_date;
+            // Also backfill into fetchedData if present
+            if (fetchedData) {
+              const fd = fetchedData.movies.find(f => f.title === movie.title);
+              if (fd) fd.release_date = result.release_date;
+            }
+          } else {
+            dateMap[movie.title] = '';
+          }
+        } catch {
+          dateMap[movie.title] = '';
+        }
+      }));
+      if (i + BATCH < missing.length) await new Promise(r => setTimeout(r, DELAY));
+    }
+
+    btn.disabled = false;
+    btn.textContent = dateSortOrder === 'desc' ? 'Sort: Newest First' : 'Sort: Oldest First';
+  }
+
+  // Sort: movies with a date first, undated go to the end
+  movies.sort((a, b) => {
+    const da = dateMap[a.title] || '';
+    const db = dateMap[b.title] || '';
+    if (!da && !db) return 0;
+    if (!da) return 1;
+    if (!db) return -1;
+    return dateSortOrder === 'desc'
+      ? db.localeCompare(da)
+      : da.localeCompare(db);
+  });
+
+  const label = dateSortOrder === 'desc' ? 'Newest first' : 'Oldest first';
+  renderList();
+  showToast(`Sorted: ${label}`, 'gold');
+
+  // Toggle for next click
+  dateSortOrder = dateSortOrder === 'desc' ? 'asc' : 'desc';
+  btn.textContent = dateSortOrder === 'desc' ? 'Sort: Newest First' : 'Sort: Oldest First';
+}
+
+// ---- FETCH FROM TMDB ----
+async function fetchAll() {
+  if (isFetching) return;
+  isFetching = true;
+
+  const btn = document.getElementById('fetchBtn');
+  btn.disabled = true;
+  btn.textContent = 'Fetching...';
+  document.getElementById('downloadBtn').style.display = 'none';
+
+  const progressSection = document.getElementById('progressSection');
+  const progressStatus = document.getElementById('progressStatus');
+  const progressFill = document.getElementById('progressFill');
+  const progressLog = document.getElementById('progressLog');
+
+  progressSection.classList.add('visible');
+  progressLog.innerHTML = '';
+
+  const results = [];
+  const BATCH = 5;
+  const DELAY = 250;
+  let done = 0;
+
+  function logLine(text, cls) {
+    const el = document.createElement('div');
+    el.className = cls || '';
+    el.textContent = text;
+    progressLog.appendChild(el);
+    progressLog.scrollTop = progressLog.scrollHeight;
+  }
+
+  for (let i = 0; i < movies.length; i += BATCH) {
+    const batch = movies.slice(i, i + BATCH);
+
+    const batchResults = await Promise.all(batch.map(async movie => {
+      try {
+        let result;
+
+        if (movie.tmdb_id) {
+          // Pinned ID — fetch directly by ID
+          const res = await fetch(
+            `https://api.themoviedb.org/3/movie/${movie.tmdb_id}?language=en-US`,
+            { headers: HEADERS }
+          );
+          const data = await res.json();
+          result = data.id ? { ...data, genre_ids: (data.genres || []).map(g => g.id) } : null;
+        } else {
+          // Search and pick best genre match
+          const res = await fetch(
+            `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movie.title)}&include_adult=false&language=en-US&page=1`,
+            { headers: HEADERS }
+          );
+          const data = await res.json();
+          result = bestMatch(data.results, movie.genres);
+        }
+
+        done++;
+        const pct = Math.round((done / movies.length) * 100);
+        progressFill.style.width = pct + '%';
+        progressStatus.textContent = `${done} / ${movies.length} fetched`;
+
+        if (result) {
+          logLine(`✓ ${movie.title}`, 'log-ok');
+          return {
+            title: movie.title,
+            genres: movie.genres,
+            poster: result.poster_path ? IMG_BASE + result.poster_path : null,
+            overview: result.overview || '',
+            rating: result.vote_average ? parseFloat(result.vote_average.toFixed(1)) : null,
+            year: result.release_date ? result.release_date.slice(0, 4) : '',
+            release_date: result.release_date || '',
+            tmdb_id: result.id,
+          };
+        } else {
+          logLine(`? ${movie.title} (not found)`, 'log-miss');
+          return { title: movie.title, genres: movie.genres, poster: null, overview: '', rating: null, year: '', release_date: '', tmdb_id: null };
+        }
+      } catch {
+        done++;
+        logLine(`✕ ${movie.title} (error)`, 'log-err');
+        return { title: movie.title, genres: movie.genres, poster: null, overview: '', rating: null, year: '', release_date: '', tmdb_id: null };
+      }
+    }));
+
+    results.push(...batchResults);
+    if (i + BATCH < movies.length) await new Promise(r => setTimeout(r, DELAY));
+  }
+
+  const found = results.filter(r => r.tmdb_id).length;
+  const missing = results.filter(r => !r.tmdb_id).length;
+
+  fetchedData = {
+    generated: new Date().toISOString(),
+    total: results.length,
+    found,
+    missing,
+    movies: results,
+  };
+
+  progressStatus.textContent = `Done. ${found} found, ${missing} not found.`;
+  renderList();
+
+  btn.disabled = false;
+  btn.textContent = 'Fetch from TMDB';
+  isFetching = false;
+
+  document.getElementById('downloadBtn').style.display = '';
+  showToast(`Fetched ${found}/${movies.length} movies`, 'green');
+}
+
+// ---- FILE SYSTEM ACCESS API ----
+let fileHandle = null;
+
+function setFileStatus(name) {
+  const el = document.getElementById('openFileStatus');
+  el.textContent = name ? name : '';
+  el.style.color = name ? 'var(--gold)' : 'var(--muted)';
+}
+
+async function openFile() {
+  try {
+    const [handle] = await window.showOpenFilePicker({
+      types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }],
+      multiple: false,
+    });
+    fileHandle = handle;
+    const file = await handle.getFile();
+    const text = await file.text();
+    const data = JSON.parse(text);
+    if (data.movies && Array.isArray(data.movies)) {
+      movies = data.movies.map(m => {
+        const entry = { title: m.title, genres: m.genres };
+        if (m.tmdb_id) entry.tmdb_id = m.tmdb_id;
+        return entry;
+      });
+      fetchedData = data;
+      document.getElementById('downloadBtn').style.display = '';
+      setFileStatus(file.name);
+      renderList();
+      showToast(`Loaded ${movies.length} movies`, 'gold');
+    } else {
+      showToast('Invalid movies.json format.');
+    }
+  } catch (e) {
+    if (e.name !== 'AbortError') showToast('Could not open file.');
+  }
+}
+
+// ---- DOWNLOAD / SAVE ----
+async function downloadJSON() {
+  if (!fetchedData) { showToast('Fetch from TMDB first.'); return; }
+
+  const json = JSON.stringify(fetchedData, null, 2);
+  const btn = document.getElementById('downloadBtn');
+  btn.disabled = true;
+  btn.textContent = 'Saving...';
+
+  try {
+    if (fileHandle) {
+      // Write directly back to the same file
+      const writable = await fileHandle.createWritable();
+      await writable.write(json);
+      await writable.close();
+      showToast('movies.json saved', 'green');
+    } else {
+      // No handle — fall back to regular download
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'movies.json'; a.click();
+      URL.revokeObjectURL(url);
+      showToast('Downloaded movies.json', 'green');
+    }
+  } catch (e) {
+    // User may have denied write permission — try download fallback
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'movies.json'; a.click();
+    URL.revokeObjectURL(url);
+    showToast('Saved as download (write denied)', 'gold');
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Save movies.json';
+}
+
+// ---- INIT ----
+renderList();
+let toastTimer;
+function showToast(msg, type) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = 'toast show' + (type ? ' ' + type : '');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+// ---- AUTOFILL FROM TMDB ID ----
+let autofillTimer = null;
+
+function handleTmdbIdInput() {
+  const val = document.getElementById('addTmdbId').value.trim();
+  const status = document.getElementById('autofillStatus');
+  clearTimeout(autofillTimer);
+
+  // Only autofill if field looks like a numeric ID
+  if (!/^\d{3,}$/.test(val)) {
+    status.textContent = '';
+    status.style.color = 'var(--muted)';
+    return;
+  }
+
+  status.textContent = 'Looking up...';
+  status.style.color = 'var(--muted)';
+
+  autofillTimer = setTimeout(() => autofillFromId(), 600);
+}
+
+async function autofillFromId() {
+  const val = document.getElementById('addTmdbId').value.trim();
+  const status = document.getElementById('autofillStatus');
+  const titleEl = document.getElementById('addTitle');
+  const genresEl = document.getElementById('addGenres');
+
+  if (!/^\d{3,}$/.test(val)) return;
+
+  // Don't overwrite if user already typed something in both fields
+  if (titleEl.value.trim() && genresEl.value.trim()) return;
+
+  status.textContent = 'Fetching...';
+  status.style.color = 'var(--gold)';
+
+  try {
+    const res = await fetch(
+      `https://api.themoviedb.org/3/movie/${val}?language=en-US`,
+      { headers: HEADERS }
+    );
+    const data = await res.json();
+
+    if (!data.id) {
+      status.textContent = 'Not found';
+      status.style.color = 'var(--danger)';
+      setTimeout(() => { status.textContent = ''; }, 2000);
+      return;
+    }
+
+    if (!titleEl.value.trim()) {
+      titleEl.value = data.title || '';
+    }
+
+    if (!genresEl.value.trim() && data.genres?.length) {
+      genresEl.value = data.genres.map(g => g.name).join(', ');
+    }
+
+    status.textContent = 'Filled';
+    status.style.color = 'var(--success)';
+    setTimeout(() => { status.textContent = ''; }, 2000);
+
+  } catch {
+    status.textContent = 'Error';
+    status.style.color = 'var(--danger)';
+    setTimeout(() => { status.textContent = ''; }, 2000);
+  }
+}
+
+// ---- KEYBOARD SHORTCUTS ----
+document.getElementById('addTitle').addEventListener('keydown', e => {
+  if (e.key === 'Enter') document.getElementById('addGenres').focus();
+});
+document.getElementById('addGenres').addEventListener('keydown', e => {
+  if (e.key === 'Enter') addMovie();
+});
+
+// ---- INIT ----
+renderList();
+</script>
+</body>
+</html>
