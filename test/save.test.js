@@ -29,11 +29,19 @@ async function withFetch(routes, fn) {
   }
 }
 
-test('returns 500 when GITHUB_TOKEN is missing', async () => {
+test('returns 500 when GITHUB_TOKEN is missing', async (t) => {
   delete process.env.GITHUB_TOKEN;
+  t.after(() => {
+    process.env.GITHUB_TOKEN = 'test-token';
+  });
   const res = await handler({ httpMethod: 'POST', body: '{}' });
   assert.strictEqual(res.statusCode, 500);
-  process.env.GITHUB_TOKEN = 'test-token';
+});
+
+test('returns 400 for payload without a movies array', async () => {
+  const res = await handler({ httpMethod: 'POST', body: '42' });
+  assert.strictEqual(res.statusCode, 400);
+  assert.match(JSON.parse(res.body).error, /movies array/);
 });
 
 test('returns 405 for non-POST', async () => {
@@ -93,4 +101,25 @@ test('returns GitHub PUT error with readable message', async () => {
 
   assert.strictEqual(res.statusCode, 409);
   assert.match(JSON.parse(res.body).error, /sha doesnt match/);
+});
+
+test('returns upstream status when reading movies.json fails', async () => {
+  const res = await withFetch({
+    'GET https://api.github.com/repos/kristophershola/movie-updater/contents/movies.json?ref=main': () =>
+      jsonRes(403, {}),
+  }, () => handler({ httpMethod: 'POST', body: '{"movies":[]}' }));
+
+  assert.strictEqual(res.statusCode, 403);
+  assert.deepStrictEqual(JSON.parse(res.body), { error: 'Failed to read movies.json (403)' });
+});
+
+test('returns 500 when GitHub fetch throws', async () => {
+  const res = await withFetch({
+    'GET https://api.github.com/repos/kristophershola/movie-updater/contents/movies.json?ref=main': () => {
+      throw new Error('network down');
+    },
+  }, () => handler({ httpMethod: 'POST', body: '{"movies":[]}' }));
+
+  assert.strictEqual(res.statusCode, 500);
+  assert.match(JSON.parse(res.body).error, /network down/);
 });

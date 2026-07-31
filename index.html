@@ -1119,10 +1119,10 @@ async function downloadJSON() {
     a.href = url; a.download = 'movies.json'; a.click();
     URL.revokeObjectURL(url);
     showToast(`Save failed (${e.message}) - downloaded instead`, 'gold');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Save movies.json';
   }
-
-  btn.disabled = false;
-  btn.textContent = 'Save movies.json';
 }
 
 // ---- INIT ----
@@ -1228,6 +1228,8 @@ async function loadMoviesFromHost() {
       document.getElementById('downloadBtn').style.display = '';
       renderList();
       showToast(`Loaded ${movies.length} movies from server`, 'green');
+    } else {
+      showToast('movies.json is empty or invalid - starting with default list', 'gold');
     }
   } catch (e) {
     showToast('Could not load movies.json - starting with default list', 'gold');
