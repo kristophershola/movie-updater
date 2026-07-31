@@ -825,8 +825,22 @@ function addMovie() {
   const entry = { title, genres };
   if (tmdbId) entry.tmdb_id = tmdbId;
   movies.push(entry);
-  fetchedData = null;
-  document.getElementById('downloadBtn').style.display = 'none';
+  if (fetchedData && Array.isArray(fetchedData.movies)) {
+    fetchedData.movies.push({
+      title: entry.title,
+      genres: entry.genres,
+      poster: null,
+      overview: '',
+      rating: null,
+      year: '',
+      release_date: '',
+      tmdb_id: entry.tmdb_id || null,
+    });
+    fetchedData.total = fetchedData.movies.length;
+    fetchedData.found = fetchedData.movies.filter(m => m.tmdb_id).length;
+    fetchedData.missing = fetchedData.movies.length - fetchedData.found;
+  }
+  document.getElementById('downloadBtn').style.display = fetchedData ? '' : 'none';
   titleEl.value = '';
   genresEl.value = '';
   tmdbIdEl.value = '';
