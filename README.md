@@ -4,12 +4,12 @@ Single-file web app for updating the Lavish Cinemas movie list. Pulls now-playin
 
 ## Files
 
-- `lavish_updater.html` - the whole app (HTML, CSS, JS) in one file. Open it directly in a browser.
+- `index.html` - the whole app (HTML, CSS, JS) in one file. Open it directly in a browser.
 - `movies.json` - generated output data consumed by the site.
 
 ## Usage
 
-1. Open `lavish_updater.html` in a browser.
+1. Open `index.html` in a browser.
 2. Click "Fetch from TMDB" to pull current titles.
 3. Pin, reorder, or add movies by TMDB ID.
 4. Export to `movies.json` when the list is ready.
