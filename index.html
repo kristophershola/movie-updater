@@ -186,6 +186,52 @@ header {
   margin-top: 2px;
 }
 
+/* TITLE SUGGEST */
+.title-suggest {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  max-height: 240px;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.title-suggest-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.title-suggest-row:hover,
+.title-suggest-row.highlight {
+  background: var(--gold-dim);
+}
+
+.title-suggest-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.title-suggest-none {
+  padding: 8px 12px;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--muted);
+}
+
 /* IMPORT */
 .import-area {
   border: 1px dashed var(--border2);
@@ -571,7 +617,10 @@ header {
     <div class="panel-section">
       <div class="panel-label">Add Movie</div>
       <div class="form-row">
-        <input class="form-input" id="addTitle" type="text" placeholder="Movie title (as it appears on TMDB)">
+        <div style="position:relative">
+          <input class="form-input" id="addTitle" type="text" placeholder="Movie title (as it appears on TMDB)" autocomplete="off">
+          <div class="title-suggest" id="titleSuggest" hidden></div>
+        </div>
         <input class="form-input" id="addGenres" type="text" placeholder="Genres (e.g. Action, Thriller)">
         <div style="position:relative">
           <input class="form-input" id="addTmdbId" type="text" placeholder="TMDB ID — autofills title &amp; genres" style="padding-right:70px" oninput="handleTmdbIdInput()" onblur="autofillFromId()">
