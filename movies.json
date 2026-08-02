@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-02T17:35:32.201Z",
+  "generated": "2026-08-02T17:36:52.952Z",
   "total": 100,
   "found": 100,
   "missing": 0,
@@ -143,6 +143,16 @@
       "year": "2026",
       "release_date": "2026-05-20",
       "tmdb_id": 1380291
+    },
+    {
+      "title": "The Mandalorian and Grogu",
+      "genres": "Action, Adventure, Science Fiction",
+      "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "rating": 7.4,
+      "year": "2026",
+      "release_date": "2026-05-20",
+      "tmdb_id": 1228710
     },
     {
       "title": "Is God Is",
@@ -993,16 +1003,6 @@
       "year": "2025",
       "release_date": "2025-04-09",
       "tmdb_id": 1087891
-    },
-    {
-      "title": "The Mandalorian and Grogu",
-      "genres": "Action, Adventure, Science Fiction",
-      "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
-      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-      "rating": 7.4,
-      "year": "2026",
-      "release_date": "2026-05-20",
-      "tmdb_id": 1228710
     }
   ]
 }
