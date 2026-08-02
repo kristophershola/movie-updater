@@ -1343,7 +1343,27 @@ document.getElementById('addTitle').addEventListener('input', handleTitleInput);
 
 // ---- KEYBOARD SHORTCUTS ----
 document.getElementById('addTitle').addEventListener('keydown', e => {
+  const open = titleItems.length > 0 && !document.getElementById('titleSuggest').hidden;
+  if (open) {
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      highlightTitle(titleIndex < 0 ? 0 : (titleIndex + 1) % titleItems.length);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      highlightTitle(titleIndex <= 0 ? titleItems.length - 1 : titleIndex - 1);
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (titleIndex >= 0) selectTitleSuggestion(titleIndex);
+    } else if (e.key === 'Escape') {
+      hideTitleSuggest();
+    }
+    return;
+  }
   if (e.key === 'Enter') document.getElementById('addGenres').focus();
+});
+
+document.getElementById('addTitle').addEventListener('blur', () => {
+  setTimeout(() => hideTitleSuggest(), 150);
 });
 document.getElementById('addGenres').addEventListener('keydown', e => {
   if (e.key === 'Enter') addMovie();
