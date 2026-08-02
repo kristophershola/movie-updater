@@ -1255,6 +1255,7 @@ async function autofillFromId() {
 
 // ---- TITLE AUTOCOMPLETE ----
 let titleDebounce = null;
+let titleSearchSeq = 0;
 let titleIndex = -1;
 let titleItems = [];
 
@@ -1292,12 +1293,15 @@ function handleTitleInput() {
 
 async function searchTitleSuggestions(q) {
   const suggest = document.getElementById('titleSuggest');
+  const seq = ++titleSearchSeq;
   try {
     const res = await fetch(
       `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(q)}&include_adult=false&language=en-US&page=1`,
       { headers: HEADERS }
     );
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
+    if (seq !== titleSearchSeq) return;
     const results = (data.results || []).slice(0, 8);
     if (!results.length) {
       suggest.innerHTML = '<div class="title-suggest-none">No matches found</div>';
@@ -1322,6 +1326,7 @@ async function searchTitleSuggestions(q) {
 }
 
 function selectTitleSuggestion(i) {
+  clearTimeout(titleDebounce);
   const r = titleItems[i];
   if (!r) return;
   const titleEl = document.getElementById('addTitle');
