@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T12:48:03.561Z",
+  "generated": "2026-08-02T17:35:32.201Z",
   "total": 100,
   "found": 100,
   "missing": 0,
@@ -9,7 +9,7 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
       "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-      "rating": 6.8,
+      "rating": 6.7,
       "year": "2026",
       "release_date": "2026-07-29",
       "tmdb_id": 1481343
@@ -79,7 +79,7 @@
       "genres": "Romance, Horror",
       "poster": "https://image.tmdb.org/t/p/w500/gnAsZvBygplNpp8PtjoTEYv3VPB.jpg",
       "overview": "Two teenage boys must escape a violent entity that takes the form of the person they desire most — each other.",
-      "rating": 6.4,
+      "rating": 6.3,
       "year": "2026",
       "release_date": "2026-06-17",
       "tmdb_id": 1564614
@@ -99,7 +99,7 @@
       "genres": "Mystery, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/bi7Aeaozl51cd5K6vAn8tI1lOW0.jpg",
       "overview": "A computer scientist is invited by a tech billionaire to join his private facility on a Caribbean island to investigate extraterrestrial matter on Earth. When they make contact beyond our world, chaos erupts as we’re left to wonder: do they come in peace?",
-      "rating": 6.5,
+      "rating": 6.6,
       "year": "2026",
       "release_date": "2026-06-05",
       "tmdb_id": 1083884
@@ -119,7 +119,7 @@
       "genres": "Comedy, Family",
       "poster": "https://image.tmdb.org/t/p/w500/4apG9Xk6HQvV48JKEjSUeiebju7.jpg",
       "overview": "After his wife Katie lands a once-in-a-lifetime deal on Shark Tank that takes her on a prolonged business trip - lifelong breadwinner Nate Wilcox now has to fend for his family as a first-time stay-at-home dad.",
-      "rating": 7.5,
+      "rating": 7.6,
       "year": "2026",
       "release_date": "2026-05-29",
       "tmdb_id": 1440050
@@ -159,7 +159,7 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "rating": 8.2,
+      "rating": 8.3,
       "year": "2026",
       "release_date": "2026-05-13",
       "tmdb_id": 1339713
@@ -319,7 +319,7 @@
       "genres": "Thriller, Drama, Mystery",
       "poster": "https://image.tmdb.org/t/p/w500/eWb841fMkSNly5gfL9J1N0xzVYI.jpg",
       "overview": "Tommy, a volatile 19-year-old, revels in drugs, parties and violence. After getting separated from his friends on a drunken bender, he is abducted by a shadowy figure. He wakes to find himself imprisoned in the basement of a remote Yorkshire house, inhabited by a very strange family. But what unfolds is not what he could possibly expect.",
-      "rating": 7.2,
+      "rating": 7.1,
       "year": "2026",
       "release_date": "2026-03-06",
       "tmdb_id": 1381027
@@ -429,7 +429,7 @@
       "genres": "Horror, Thriller, Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/zbJWVHOtj3ljBzWgL1P8pxP03Up.jpg",
       "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-      "rating": 7.1,
+      "rating": 7,
       "year": "2026",
       "release_date": "2026-01-22",
       "tmdb_id": 1198994
@@ -769,7 +769,7 @@
       "genres": "Animation, Action, Fantasy",
       "poster": "https://image.tmdb.org/t/p/w500/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
       "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
-      "rating": 8.4,
+      "rating": 8.5,
       "year": "2025",
       "release_date": "2025-07-18",
       "tmdb_id": 1311031
@@ -995,14 +995,14 @@
       "tmdb_id": 1087891
     },
     {
-      "title": "Warfare",
-      "genres": "War, Action",
-      "poster": "https://image.tmdb.org/t/p/w500/l39TlELomwysfsr37vrvCV6rmaQ.jpg",
-      "overview": "A platoon of Navy SEALs embarks on a dangerous mission in Ramadi, Iraq, with the chaos and brotherhood of war retold through their memories of the event.",
-      "rating": 7.1,
-      "year": "2025",
-      "release_date": "2025-04-09",
-      "tmdb_id": 1241436
+      "title": "The Mandalorian and Grogu",
+      "genres": "Action, Adventure, Science Fiction",
+      "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "rating": 7.4,
+      "year": "2026",
+      "release_date": "2026-05-20",
+      "tmdb_id": 1228710
     }
   ]
 }
