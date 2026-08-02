@@ -1253,6 +1253,94 @@ async function autofillFromId() {
   }
 }
 
+// ---- TITLE AUTOCOMPLETE ----
+let titleDebounce = null;
+let titleIndex = -1;
+let titleItems = [];
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function hideTitleSuggest() {
+  const suggest = document.getElementById('titleSuggest');
+  suggest.hidden = true;
+  suggest.innerHTML = '';
+  titleIndex = -1;
+  titleItems = [];
+}
+
+function highlightTitle(i) {
+  titleIndex = i;
+  const rows = document.querySelectorAll('#titleSuggest .title-suggest-row');
+  rows.forEach((row, idx) => row.classList.toggle('highlight', idx === i));
+}
+
+function handleTitleInput() {
+  clearTimeout(titleDebounce);
+  const q = document.getElementById('addTitle').value.trim();
+  if (q.length < 2) {
+    hideTitleSuggest();
+    return;
+  }
+  titleDebounce = setTimeout(() => searchTitleSuggestions(q), 400);
+}
+
+async function searchTitleSuggestions(q) {
+  const suggest = document.getElementById('titleSuggest');
+  try {
+    const res = await fetch(
+      `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(q)}&include_adult=false&language=en-US&page=1`,
+      { headers: HEADERS }
+    );
+    const data = await res.json();
+    const results = (data.results || []).slice(0, 8);
+    if (!results.length) {
+      suggest.innerHTML = '<div class="title-suggest-none">No matches found</div>';
+      suggest.hidden = false;
+      titleIndex = -1;
+      titleItems = [];
+      return;
+    }
+    titleItems = results;
+    titleIndex = -1;
+    suggest.innerHTML = results.map((r, i) => {
+      const year = r.release_date ? r.release_date.slice(0, 4) : '';
+      return `<div class="title-suggest-row" onclick="selectTitleSuggestion(${i})" onmouseenter="highlightTitle(${i})">` +
+        `<span>${escapeHtml(r.title)}</span>` +
+        (year ? `<span class="title-suggest-year">(${escapeHtml(year)})</span>` : '') +
+        `</div>`;
+    }).join('');
+    suggest.hidden = false;
+  } catch {
+    hideTitleSuggest();
+  }
+}
+
+function selectTitleSuggestion(i) {
+  const r = titleItems[i];
+  if (!r) return;
+  const titleEl = document.getElementById('addTitle');
+  const genresEl = document.getElementById('addGenres');
+  const tmdbIdEl = document.getElementById('addTmdbId');
+  titleEl.value = r.title || '';
+  tmdbIdEl.value = String(r.id || '');
+  if (!genresEl.value.trim()) {
+    genresEl.value = (r.genre_ids || [])
+      .map(id => TMDB_GENRES[id])
+      .filter(Boolean)
+      .join(', ');
+  }
+  hideTitleSuggest();
+  genresEl.focus();
+}
+
+document.getElementById('addTitle').addEventListener('input', handleTitleInput);
+
 // ---- KEYBOARD SHORTCUTS ----
 document.getElementById('addTitle').addEventListener('keydown', e => {
   if (e.key === 'Enter') document.getElementById('addGenres').focus();
