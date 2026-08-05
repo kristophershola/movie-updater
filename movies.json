@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-02T19:45:45.190Z",
+  "generated": "2026-08-05T09:47:52.667Z",
   "total": 100,
   "found": 100,
   "missing": 0,
@@ -9,7 +9,7 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
       "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-      "rating": 6.7,
+      "rating": 6.5,
       "year": "2026",
       "release_date": "2026-07-29",
       "tmdb_id": 1481343
@@ -19,7 +19,7 @@
       "genres": "Action, Adventure, Animation, Fantasy",
       "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
       "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
-      "rating": 9.4,
+      "rating": 9.3,
       "year": "2026",
       "release_date": "2026-07-24",
       "tmdb_id": 980431
@@ -29,7 +29,7 @@
       "genres": "Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/8dq7vaUkXPqwqKxBFW4qJNBWeop.jpg",
       "overview": "Desperate to save a struggling country club and earn his father's respect, a washed-up tennis pro is compelled to break a sacred vow and do the unthinkable: play pickleball.",
-      "rating": 6.2,
+      "rating": 6.3,
       "year": "2026",
       "release_date": "2026-07-23",
       "tmdb_id": 1361774
@@ -45,6 +45,16 @@
       "tmdb_id": 1484913
     },
     {
+      "title": "Evil Dead Burn",
+      "genres": "Horror, Thriller",
+      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
+      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
+      "rating": 7.7,
+      "year": "2026",
+      "release_date": "2026-07-07",
+      "tmdb_id": 1212763
+    },
+    {
       "title": "Enola Holmes 3",
       "genres": "Adventure, Crime, Mystery",
       "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
@@ -55,11 +65,21 @@
       "tmdb_id": 1202033
     },
     {
+      "title": "Lucky Strike",
+      "genres": "Action, War",
+      "poster": "https://image.tmdb.org/t/p/w500/fBniztkLes0lA2CD50j4iWAwX5y.jpg",
+      "overview": "A wounded American soldier fights to survive behind enemy lines during WWII's Battle of the Bulge against the Germans, relying on his instinct, spy craft and a hand-radio to evade capture and find his way back to his unit.",
+      "rating": 7.3,
+      "year": "2026",
+      "release_date": "2026-06-26",
+      "tmdb_id": 1594914
+    },
+    {
       "title": "Supergirl",
       "genres": "Action, Adventure, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "rating": 6.8,
+      "rating": 6.7,
       "year": "2026",
       "release_date": "2026-06-24",
       "tmdb_id": 1081003
@@ -78,8 +98,8 @@
       "title": "Leviticus",
       "genres": "Romance, Horror",
       "poster": "https://image.tmdb.org/t/p/w500/gnAsZvBygplNpp8PtjoTEYv3VPB.jpg",
-      "overview": "Two teenage boys must escape a violent entity that takes the form of the person they desire most — each other.",
-      "rating": 6.3,
+      "overview": "Two teenage boys must escape a violent entity that takes the form of the person they desire most:  each other.",
+      "rating": 6.2,
       "year": "2026",
       "release_date": "2026-06-17",
       "tmdb_id": 1564614
@@ -119,7 +139,7 @@
       "genres": "Comedy, Family",
       "poster": "https://image.tmdb.org/t/p/w500/4apG9Xk6HQvV48JKEjSUeiebju7.jpg",
       "overview": "After his wife Katie lands a once-in-a-lifetime deal on Shark Tank that takes her on a prolonged business trip - lifelong breadwinner Nate Wilcox now has to fend for his family as a first-time stay-at-home dad.",
-      "rating": 7.6,
+      "rating": 7.4,
       "year": "2026",
       "release_date": "2026-05-29",
       "tmdb_id": 1440050
@@ -169,7 +189,7 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "rating": 8.3,
+      "rating": 8.2,
       "year": "2026",
       "release_date": "2026-05-13",
       "tmdb_id": 1339713
@@ -199,7 +219,7 @@
       "genres": "Action, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/pK6tGCG6UAgUT5FTq3ylGErHxQQ.jpg",
       "overview": "When a former elite sniper is hunted down by the ruthless warlord who once held her captive, she must fight to the death to protect the daughter she has raised in hiding, on a remote Australian farm.",
-      "rating": 6.1,
+      "rating": 6,
       "year": "2026",
       "release_date": "2026-04-30",
       "tmdb_id": 1288341
@@ -219,7 +239,7 @@
       "genres": "Horror",
       "poster": "https://image.tmdb.org/t/p/w500/x6rHcQFiYcczLQPrmxXPAicm54E.jpg",
       "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
-      "rating": 7,
+      "rating": 6.9,
       "year": "2026",
       "release_date": "2026-04-29",
       "tmdb_id": 1430077
@@ -227,7 +247,7 @@
     {
       "title": "The Devil Wears Prada 2",
       "genres": "Comedy, Drama",
-      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
       "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
       "rating": 7.1,
       "year": "2026",
@@ -259,7 +279,7 @@
       "genres": "Romance, Drama",
       "poster": "https://image.tmdb.org/t/p/w500/hAKOp4AHaDiVdDMlobMNCNgJVD7.jpg",
       "overview": "New city, new life, and an unexpected encounter with Luke-a boy fueled by adrenaline and haunted by demons. Despite the warnings, Hasley can't stay away. In their 'boulevard,' they find a raw, liberating love. But as his past threatens to destroy them both, Hasley faces a heartbreaking choice: can you save someone who isn't ready to be rescued?",
-      "rating": 7.5,
+      "rating": 7.4,
       "year": "2026",
       "release_date": "2026-04-10",
       "tmdb_id": 1595852
@@ -329,7 +349,7 @@
       "genres": "Thriller, Drama, Mystery",
       "poster": "https://image.tmdb.org/t/p/w500/eWb841fMkSNly5gfL9J1N0xzVYI.jpg",
       "overview": "Tommy, a volatile 19-year-old, revels in drugs, parties and violence. After getting separated from his friends on a drunken bender, he is abducted by a shadowy figure. He wakes to find himself imprisoned in the basement of a remote Yorkshire house, inhabited by a very strange family. But what unfolds is not what he could possibly expect.",
-      "rating": 7.1,
+      "rating": 7.2,
       "year": "2026",
       "release_date": "2026-03-06",
       "tmdb_id": 1381027
@@ -789,7 +809,7 @@
       "genres": "Animation, Action, Fantasy",
       "poster": "https://image.tmdb.org/t/p/w500/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
       "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
-      "rating": 8.5,
+      "rating": 8.6,
       "year": "2025",
       "release_date": "2025-07-18",
       "tmdb_id": 1311031
@@ -983,26 +1003,6 @@
       "year": "2025",
       "release_date": "2025-04-23",
       "tmdb_id": 870028
-    },
-    {
-      "title": "Until Dawn",
-      "genres": "Horror, Mystery",
-      "poster": "https://image.tmdb.org/t/p/w500/bLY5yN4MKVynZ2HMZWElTOGBgBe.jpg",
-      "overview": "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
-      "rating": 6.3,
-      "year": "2025",
-      "release_date": "2025-04-23",
-      "tmdb_id": 1232546
-    },
-    {
-      "title": "Sinners",
-      "genres": "Horror, Action, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
-      "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
-      "rating": 7.5,
-      "year": "2025",
-      "release_date": "2025-04-16",
-      "tmdb_id": 1233413
     }
   ]
 }
