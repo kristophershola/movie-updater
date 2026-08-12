@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T21:32:00.908Z",
+  "generated": "2026-08-12T21:38:27.419Z",
   "total": 100,
   "found": 100,
   "missing": 0,
@@ -595,6 +595,16 @@
       "tmdb_id": 1234731
     },
     {
+      "title": "Colours of fire",
+      "genres": "Fantasy",
+      "poster": "https://image.tmdb.org/t/p/w500/ofNx6t88V21F8wVXmrF7zcI6ga5.jpg",
+      "overview": "When a warrior is sent out to hunt a beast believed to be unleashed by his clan's rivals, he uncovers a darker truth and an unexpected connection. Now he must decide: protect his clan's honour or risk everything for a forbidden love.",
+      "rating": null,
+      "year": "2025",
+      "release_date": "2025-12-24",
+      "tmdb_id": 1746265
+    },
+    {
       "title": "Marty Supreme",
       "genres": "Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
@@ -993,16 +1003,6 @@
       "year": "2025",
       "release_date": "2025-06-05",
       "tmdb_id": 1426776
-    },
-    {
-      "title": "Ballerina",
-      "genres": "Action, Thriller, Crime",
-      "poster": "https://image.tmdb.org/t/p/w500/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg",
-      "overview": "Taking place during the events of John Wick: Chapter 3 – Parabellum, Eve Macarro begins her training in the assassin traditions of the Ruska Roma.",
-      "rating": 7.3,
-      "year": "2025",
-      "release_date": "2025-06-04",
-      "tmdb_id": 541671
     }
   ]
 }
