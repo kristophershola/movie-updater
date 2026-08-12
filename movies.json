@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T09:47:52.667Z",
+  "generated": "2026-08-12T21:32:00.908Z",
   "total": 100,
   "found": 100,
   "missing": 0,
@@ -29,7 +29,7 @@
       "genres": "Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/8dq7vaUkXPqwqKxBFW4qJNBWeop.jpg",
       "overview": "Desperate to save a struggling country club and earn his father's respect, a washed-up tennis pro is compelled to break a sacred vow and do the unthinkable: play pickleball.",
-      "rating": 6.3,
+      "rating": 6.2,
       "year": "2026",
       "release_date": "2026-07-23",
       "tmdb_id": 1361774
@@ -39,27 +39,57 @@
       "genres": "Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/fp5EAKE8nTx402n1fWz55QsuYY9.jpg",
       "overview": "With a loved one's life at stake, a celebrated lawyer must defend a man he suspects is guilty — battling his conscience every step of the way.",
-      "rating": 5.5,
+      "rating": 5.7,
       "year": "2026",
       "release_date": "2026-07-10",
       "tmdb_id": 1484913
+    },
+    {
+      "title": "Night Nurse",
+      "genres": "Drama, Thriller",
+      "poster": "https://image.tmdb.org/t/p/w500/cvj1d5avMYRxK8FVpq07UqLrcbZ.jpg",
+      "overview": "As a series of perverse scam calls unsettles an idyllic retirement community, a starry-eyed nurse becomes entangled with her mysterious patient.",
+      "rating": 6,
+      "year": "2026",
+      "release_date": "2026-07-10",
+      "tmdb_id": 1596260
+    },
+    {
+      "title": "Gail Daughtry and the Celebrity Sex Pass",
+      "genres": "Comedy",
+      "poster": "https://image.tmdb.org/t/p/w500/98T4bnMjJs71WOVZoeY8edZhfgZ.jpg",
+      "overview": "Small-town Kansas hairdresser Gail Daughtry's fiancé uses his 'celebrity sex pass' on Jennifer Aniston, prompting Gail to travel to LA with her friend Otto to find her own pass, Jon Hamm, to even the score.",
+      "rating": 5.6,
+      "year": "2026",
+      "release_date": "2026-07-09",
+      "tmdb_id": 1476682
     },
     {
       "title": "Evil Dead Burn",
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
       "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "rating": 7.7,
+      "rating": 7.9,
       "year": "2026",
       "release_date": "2026-07-07",
       "tmdb_id": 1212763
+    },
+    {
+      "title": "Young Washington",
+      "genres": "History, War, Drama",
+      "poster": "https://image.tmdb.org/t/p/w500/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
+      "overview": "Before he led a nation, George Washington was a young soldier thrown into a global conflict. With alliances crumbling and war closing in, he must choose who to trust and confront the leader he's becoming.",
+      "rating": 7.8,
+      "year": "2026",
+      "release_date": "2026-07-02",
+      "tmdb_id": 1308767
     },
     {
       "title": "Enola Holmes 3",
       "genres": "Adventure, Crime, Mystery",
       "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
       "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
-      "rating": 6.9,
+      "rating": 6.8,
       "year": "2026",
       "release_date": "2026-06-30",
       "tmdb_id": 1202033
@@ -67,12 +97,32 @@
     {
       "title": "Lucky Strike",
       "genres": "Action, War",
-      "poster": "https://image.tmdb.org/t/p/w500/fBniztkLes0lA2CD50j4iWAwX5y.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/kzRAd7mj39ZY3FGNrDdZjqx56tn.jpg",
       "overview": "A wounded American soldier fights to survive behind enemy lines during WWII's Battle of the Bulge against the Germans, relying on his instinct, spy craft and a hand-radio to evade capture and find his way back to his unit.",
-      "rating": 7.3,
+      "rating": 7.5,
       "year": "2026",
       "release_date": "2026-06-26",
       "tmdb_id": 1594914
+    },
+    {
+      "title": "The Invite",
+      "genres": "Comedy, Drama, Romance",
+      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "rating": 7.5,
+      "year": "2026",
+      "release_date": "2026-06-25",
+      "tmdb_id": 950028
+    },
+    {
+      "title": "Jackass: Best and Last",
+      "genres": "Action, Comedy, Documentary",
+      "poster": "https://image.tmdb.org/t/p/w500/tfgccePxnswMqhmtxafliLlcCVR.jpg",
+      "overview": "The fifth and final installment to Jackass franchise where the crew go on one last insane crusade.",
+      "rating": 7.5,
+      "year": "2026",
+      "release_date": "2026-06-25",
+      "tmdb_id": 1612018
     },
     {
       "title": "Supergirl",
@@ -85,11 +135,21 @@
       "tmdb_id": 1081003
     },
     {
+      "title": "Minions & Monsters",
+      "genres": "Adventure, Animation, Comedy, Family, Fantasy",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "rating": 7,
+      "year": "2026",
+      "release_date": "2026-06-24",
+      "tmdb_id": 1315772
+    },
+    {
       "title": "Little Brother",
       "genres": "Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
       "overview": "A tightly wound realtor's picture-perfect life gets an extreme makeover when his lovably chaotic \"little brother\" suddenly reappears.",
-      "rating": 6.5,
+      "rating": 6.4,
       "year": "2026",
       "release_date": "2026-06-18",
       "tmdb_id": 1397385
@@ -99,7 +159,7 @@
       "genres": "Romance, Horror",
       "poster": "https://image.tmdb.org/t/p/w500/gnAsZvBygplNpp8PtjoTEYv3VPB.jpg",
       "overview": "Two teenage boys must escape a violent entity that takes the form of the person they desire most:  each other.",
-      "rating": 6.2,
+      "rating": 6.7,
       "year": "2026",
       "release_date": "2026-06-17",
       "tmdb_id": 1564614
@@ -109,7 +169,7 @@
       "genres": "Science Fiction, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
       "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-      "rating": 7.4,
+      "rating": 7.5,
       "year": "2026",
       "release_date": "2026-06-10",
       "tmdb_id": 1275779
@@ -129,7 +189,7 @@
       "genres": "Action, Fantasy, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
       "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "rating": 7.3,
+      "rating": 7.2,
       "year": "2026",
       "release_date": "2026-06-03",
       "tmdb_id": 454639
@@ -139,7 +199,7 @@
       "genres": "Comedy, Family",
       "poster": "https://image.tmdb.org/t/p/w500/4apG9Xk6HQvV48JKEjSUeiebju7.jpg",
       "overview": "After his wife Katie lands a once-in-a-lifetime deal on Shark Tank that takes her on a prolonged business trip - lifelong breadwinner Nate Wilcox now has to fend for his family as a first-time stay-at-home dad.",
-      "rating": 7.4,
+      "rating": 7.5,
       "year": "2026",
       "release_date": "2026-05-29",
       "tmdb_id": 1440050
@@ -153,6 +213,16 @@
       "year": "2026",
       "release_date": "2026-05-27",
       "tmdb_id": 1083381
+    },
+    {
+      "title": "Tuner",
+      "genres": "Crime, Drama, Thriller",
+      "poster": "https://image.tmdb.org/t/p/w500/5OvA3i9wZs5jHu0DCrfmXlzAM67.jpg",
+      "overview": "A gifted piano tuner's meticulous skills for tuning pianos lead him to discover an unexpected aptitude for cracking safes, turning his life upside down.",
+      "rating": 7.2,
+      "year": "2026",
+      "release_date": "2026-05-21",
+      "tmdb_id": 1340206
     },
     {
       "title": "Tom Clancy's Jack Ryan: Ghost War",
@@ -169,7 +239,7 @@
       "genres": "Action, Adventure, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
       "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-      "rating": 7.4,
+      "rating": 7.5,
       "year": "2026",
       "release_date": "2026-05-20",
       "tmdb_id": 1228710
@@ -179,7 +249,7 @@
       "genres": "Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/rCYQGHdoz7qwYsb6wXETJfUfDLX.jpg",
       "overview": "Two sisters embark on an epic quest for revenge, confronting a charged family history that pushes them to extraordinary lengths.",
-      "rating": 5.9,
+      "rating": 5.8,
       "year": "2026",
       "release_date": "2026-05-14",
       "tmdb_id": 1380316
@@ -219,7 +289,7 @@
       "genres": "Action, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/pK6tGCG6UAgUT5FTq3ylGErHxQQ.jpg",
       "overview": "When a former elite sniper is hunted down by the ruthless warlord who once held her captive, she must fight to the death to protect the daughter she has raised in hiding, on a remote Australian farm.",
-      "rating": 6,
+      "rating": 6.1,
       "year": "2026",
       "release_date": "2026-04-30",
       "tmdb_id": 1288341
@@ -349,7 +419,7 @@
       "genres": "Thriller, Drama, Mystery",
       "poster": "https://image.tmdb.org/t/p/w500/eWb841fMkSNly5gfL9J1N0xzVYI.jpg",
       "overview": "Tommy, a volatile 19-year-old, revels in drugs, parties and violence. After getting separated from his friends on a drunken bender, he is abducted by a shadowy figure. He wakes to find himself imprisoned in the basement of a remote Yorkshire house, inhabited by a very strange family. But what unfolds is not what he could possibly expect.",
-      "rating": 7.2,
+      "rating": 7.1,
       "year": "2026",
       "release_date": "2026-03-06",
       "tmdb_id": 1381027
@@ -409,7 +479,7 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/dWi4D1rUX1Pg4MaafpwwssqJ9lv.jpg",
       "overview": "Tethered by a frightening conclusion, Maya and the Strangers are locked on an unavoidable, unforgiving collision course — a showdown that proves they’re far from strangers now.",
-      "rating": 5.9,
+      "rating": 6,
       "year": "2026",
       "release_date": "2026-02-05",
       "tmdb_id": 1010755
@@ -443,6 +513,16 @@
       "year": "2026",
       "release_date": "2026-01-28",
       "tmdb_id": 1168190
+    },
+    {
+      "title": "Bight",
+      "genres": "Drama, Thriller, Romance",
+      "poster": "https://image.tmdb.org/t/p/w500/14e3WaORkMV1YkVpVLL3UJ6WzRC.jpg",
+      "overview": "Two couples' daring foray into open relationships leads down a tumultuous path of jealousy, betrayal, and emotional devastation.",
+      "rating": 4.1,
+      "year": "2026",
+      "release_date": "2026-01-28",
+      "tmdb_id": 1351772
     },
     {
       "title": "Cold Storage",
@@ -589,7 +669,7 @@
       "genres": "Action, Thriller, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/dKL78O9zxczVgjtNcQ9UkbYLzqX.jpg",
       "overview": "Desperate to save his sick daughter, working-class Ben Richards is convinced by The Running Man's charming but ruthless producer to enter the deadly competition game as a last resort. But Ben's defiance, instincts, and grit turn him into an unexpected fan favorite — and a threat to the entire system. As ratings skyrocket, so does the danger, and Ben must outwit not just the Hunters, but a nation addicted to watching him fall.",
-      "rating": 6.8,
+      "rating": 6.7,
       "year": "2025",
       "release_date": "2025-11-11",
       "tmdb_id": 798645
@@ -639,7 +719,7 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/gFddBLQ8wj9M9O82iPzgX5KVNHz.jpg",
       "overview": "Four years after defeating The Grabber, Finney Blake is struggling with life after captivity. When his younger sister Gwen begins receiving calls in her dreams from the Black Phone and seeing disturbing visions of three boys being stalked at a winter camp, the siblings become determined to solve the mystery and confront a killer who has grown more powerful in death and more significant to them than either could imagine.",
-      "rating": 6.7,
+      "rating": 6.6,
       "year": "2025",
       "release_date": "2025-10-15",
       "tmdb_id": 1197137
@@ -719,7 +799,7 @@
       "genres": "Horror",
       "poster": "https://image.tmdb.org/t/p/w500/byWgphT74ClOVa8EOGzYDkl8DVL.jpg",
       "overview": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-      "rating": 7,
+      "rating": 6.9,
       "year": "2025",
       "release_date": "2025-09-03",
       "tmdb_id": 1038392
@@ -789,7 +869,7 @@
       "genres": "Mystery, Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/qyGY1k5GqAORsVhfZA3gFKirZWD.jpg",
       "overview": "A troubled man starts working at a retirement home and realizes its residents and caretakers harbor sinister secrets. As he investigates the building and its forbidden fourth floor, he starts to uncover connections to his own past and upbringing as a foster child.",
-      "rating": 6.8,
+      "rating": 6.9,
       "year": "2025",
       "release_date": "2025-07-24",
       "tmdb_id": 926606
@@ -799,7 +879,7 @@
       "genres": "Science Fiction, Adventure, Action",
       "poster": "https://image.tmdb.org/t/p/w500/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
       "overview": "Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel's First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
-      "rating": 7,
+      "rating": 6.9,
       "year": "2025",
       "release_date": "2025-07-23",
       "tmdb_id": 617126
@@ -809,7 +889,7 @@
       "genres": "Animation, Action, Fantasy",
       "poster": "https://image.tmdb.org/t/p/w500/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
       "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
-      "rating": 8.6,
+      "rating": 8.7,
       "year": "2025",
       "release_date": "2025-07-18",
       "tmdb_id": 1311031
@@ -915,7 +995,7 @@
       "tmdb_id": 1426776
     },
     {
-      "title": "From the World of John Wick: Ballerina",
+      "title": "Ballerina",
       "genres": "Action, Thriller, Crime",
       "poster": "https://image.tmdb.org/t/p/w500/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg",
       "overview": "Taking place during the events of John Wick: Chapter 3 – Parabellum, Eve Macarro begins her training in the assassin traditions of the Ruska Roma.",
@@ -923,86 +1003,6 @@
       "year": "2025",
       "release_date": "2025-06-04",
       "tmdb_id": 541671
-    },
-    {
-      "title": "Lilo & Stitch",
-      "genres": "Family, Science Fiction, Comedy",
-      "poster": "https://image.tmdb.org/t/p/w500/ckQzKpQJO4ZQDCN5evdpKcfm7Ys.jpg",
-      "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-      "rating": 7.2,
-      "year": "2025",
-      "release_date": "2025-05-17",
-      "tmdb_id": 552524
-    },
-    {
-      "title": "Mission: Impossible - The Final Reckoning",
-      "genres": "Action, Thriller, Adventure",
-      "poster": "https://image.tmdb.org/t/p/w500/iKPsC9EFUafRP9SrUznI61getVP.jpg",
-      "overview": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
-      "rating": 7.2,
-      "year": "2025",
-      "release_date": "2025-05-17",
-      "tmdb_id": 575265
-    },
-    {
-      "title": "Final Destination: Bloodlines",
-      "genres": "Horror, Mystery",
-      "poster": "https://image.tmdb.org/t/p/w500/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
-      "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
-      "rating": 7,
-      "year": "2025",
-      "release_date": "2025-05-14",
-      "tmdb_id": 574475
-    },
-    {
-      "title": "Karate Kid: Legends",
-      "genres": "Action, Adventure, Drama",
-      "poster": "https://image.tmdb.org/t/p/w500/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg",
-      "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
-      "rating": 7,
-      "year": "2025",
-      "release_date": "2025-05-08",
-      "tmdb_id": 1011477
-    },
-    {
-      "title": "Clown in a Cornfield",
-      "genres": "Horror, Mystery, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/6ep6gw90TJ8bYvJC6hEDo8SxjoJ.jpg",
-      "overview": "Quinn and her father have just moved to the quiet town of Kettle Springs hoping for a fresh start. Instead, she discovers a fractured community that has fallen on hard times after the treasured Baypen Corn Syrup Factory burned down. As the locals bicker amongst themselves and tensions boil over, a sinister, grinning figure emerges from the cornfields to cleanse the town of its burdens, one bloody victim at a time.",
-      "rating": 6.1,
-      "year": "2025",
-      "release_date": "2025-05-02",
-      "tmdb_id": 713364
-    },
-    {
-      "title": "Fear Below",
-      "genres": "Horror, Action, Adventure, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/f90xO280gGQArVP2GU4IshAClt.jpg",
-      "overview": "A rag-tag team of divers attempting to salvage a sunken car from a river are thwarted by a highly aggressive bull shark.",
-      "rating": 6.1,
-      "year": "2025",
-      "release_date": "2025-05-02",
-      "tmdb_id": 1232933
-    },
-    {
-      "title": "Thunderbolts",
-      "genres": "Action, Science Fiction, Adventure",
-      "poster": "https://image.tmdb.org/t/p/w500/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg",
-      "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
-      "rating": 7.3,
-      "year": "2025",
-      "release_date": "2025-04-30",
-      "tmdb_id": 986056
-    },
-    {
-      "title": "The Accountant 2",
-      "genres": "Mystery, Crime, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/lUvfTcOZiK0sdcX0WNLPbMyKjGm.jpg",
-      "overview": "When an old acquaintance is murdered, Wolff is compelled to solve the case. Realizing more extreme measures are necessary, Wolff recruits his estranged and highly lethal brother, Brax, to help. In partnership with Marybeth Medina, they uncover a deadly conspiracy, becoming targets of a ruthless network of killers who will stop at nothing to keep their secrets buried.",
-      "rating": 7.1,
-      "year": "2025",
-      "release_date": "2025-04-23",
-      "tmdb_id": 870028
     }
   ]
 }
