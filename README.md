@@ -10,6 +10,6 @@ Single-file web app for updating the Lavish Cinemas movie list. Pulls now-playin
 ## Usage
 
 1. Open `index.html` in a browser.
-2. Click "Fetch from TMDB" to pull current titles.
-3. Pin, reorder, or add movies by TMDB ID.
-4. Export to `movies.json` when the list is ready.
+2. Movies are automatically loaded, fetched from TMDB in real time, and kept sorted from newest to oldest.
+3. Add movies by title or TMDB ID — TMDB data is fetched immediately and sorted into the list in real time.
+4. Save to `movies.json` when ready.

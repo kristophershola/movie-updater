@@ -42,10 +42,13 @@ exports.handler = async (event) => {
       return { statusCode: getRes.status, body: JSON.stringify({ error: `Failed to read movies.json (${getRes.status})` }) };
     }
 
-    // 2. Write the new file content
+    // 2. Sort movies newest to oldest by release date, then write the new file content
+    const sortedMovies = [...payload.movies].sort(
+      (a, b) => String(b.release_date).localeCompare(String(a.release_date)),
+    );
     const body = {
       message: 'Update movies.json',
-      content: Buffer.from(JSON.stringify(payload, null, 2)).toString('base64'),
+      content: Buffer.from(JSON.stringify({ ...payload, movies: sortedMovies }, null, 2)).toString('base64'),
       branch,
     };
     if (sha) body.sha = sha;

@@ -55,7 +55,14 @@ test('returns 400 for invalid JSON body', async () => {
 });
 
 test('commits new content via GitHub Contents API', async () => {
-  const payload = { generated: 'x', movies: [{ title: 'Test Movie' }] };
+  const payload = {
+    generated: 'x',
+    movies: [
+      { title: 'Old Movie', release_date: '2024-01-01' },
+      { title: 'New Movie', release_date: '2026-01-01' },
+      { title: 'Mid Movie', release_date: '2025-06-15' },
+    ],
+  };
   const captured = {};
   const res = await withFetch({
     'GET https://api.github.com/repos/kristophershola/movie-updater/contents/movies.json?ref=main': () =>
@@ -72,7 +79,11 @@ test('commits new content via GitHub Contents API', async () => {
   assert.strictEqual(req.sha, 'abc123');
   assert.strictEqual(req.branch, 'main');
   assert.strictEqual(req.message, 'Update movies.json');
-  assert.strictEqual(req.content, Buffer.from(JSON.stringify(payload, null, 2)).toString('base64'));
+  const expected = {
+    ...payload,
+    movies: [...payload.movies].sort((a, b) => String(b.release_date).localeCompare(String(a.release_date))),
+  };
+  assert.strictEqual(req.content, Buffer.from(JSON.stringify(expected, null, 2)).toString('base64'));
 });
 
 test('creates file when it does not exist (no sha)', async () => {
