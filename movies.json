@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18T09:17:22.570Z",
+  "generated": "2026-10-08T10:29:52.681Z",
   "total": 100,
   "found": 100,
   "missing": 0,
@@ -9,17 +9,27 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
       "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-      "rating": 6.6,
+      "rating": 6.5,
       "year": "2026",
       "release_date": "2026-07-29",
       "tmdb_id": 1481343
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "genres": "Science Fiction, Action, Adventure",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "rating": 8.3,
+      "year": "2026",
+      "release_date": "2026-07-29",
+      "tmdb_id": 969681
     },
     {
       "title": "Avatar Aang: The Last Airbender",
       "genres": "Action, Adventure, Animation, Fantasy",
       "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
       "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
-      "rating": 9.2,
+      "rating": 9.1,
       "year": "2026",
       "release_date": "2026-07-24",
       "tmdb_id": 980431
@@ -29,7 +39,7 @@
       "genres": "Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/8dq7vaUkXPqwqKxBFW4qJNBWeop.jpg",
       "overview": "Desperate to save a struggling country club and earn his father's respect, a washed-up tennis pro is compelled to break a sacred vow and do the unthinkable: play pickleball.",
-      "rating": 6.2,
+      "rating": 6.4,
       "year": "2026",
       "release_date": "2026-07-23",
       "tmdb_id": 1361774
@@ -39,7 +49,7 @@
       "genres": "Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/fp5EAKE8nTx402n1fWz55QsuYY9.jpg",
       "overview": "With a loved one's life at stake, a celebrated lawyer must defend a man he suspects is guilty — battling his conscience every step of the way.",
-      "rating": 5.8,
+      "rating": 5.7,
       "year": "2026",
       "release_date": "2026-07-10",
       "tmdb_id": 1484913
@@ -49,7 +59,7 @@
       "genres": "Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/cvj1d5avMYRxK8FVpq07UqLrcbZ.jpg",
       "overview": "As a series of perverse scam calls unsettles an idyllic retirement community, a starry-eyed nurse becomes entangled with her mysterious patient.",
-      "rating": 5.4,
+      "rating": 4.9,
       "year": "2026",
       "release_date": "2026-07-10",
       "tmdb_id": 1596260
@@ -59,7 +69,7 @@
       "genres": "Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/98T4bnMjJs71WOVZoeY8edZhfgZ.jpg",
       "overview": "Small-town Kansas hairdresser Gail Daughtry's fiancé uses his 'celebrity sex pass' on Jennifer Aniston, prompting Gail to travel to LA with her friend Otto to find her own pass, Jon Hamm, to even the score.",
-      "rating": 6.5,
+      "rating": 6.3,
       "year": "2026",
       "release_date": "2026-07-09",
       "tmdb_id": 1476682
@@ -69,7 +79,7 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
       "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "rating": 7.9,
+      "rating": 7.7,
       "year": "2026",
       "release_date": "2026-07-07",
       "tmdb_id": 1212763
@@ -79,7 +89,7 @@
       "genres": "History, War, Drama",
       "poster": "https://image.tmdb.org/t/p/w500/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
       "overview": "Before he led a nation, George Washington was a young soldier thrown into a global conflict. With alliances crumbling and war closing in, he must choose who to trust and confront the leader he's becoming.",
-      "rating": 7.9,
+      "rating": 7.8,
       "year": "2026",
       "release_date": "2026-07-02",
       "tmdb_id": 1308767
@@ -89,7 +99,7 @@
       "genres": "Adventure, Crime, Mystery",
       "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
       "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
-      "rating": 6.8,
+      "rating": 6.7,
       "year": "2026",
       "release_date": "2026-06-30",
       "tmdb_id": 1202033
@@ -97,9 +107,9 @@
     {
       "title": "Lucky Strike",
       "genres": "Action, War",
-      "poster": "https://image.tmdb.org/t/p/w500/7AEBdyGYXumXWmMFeynE8227KeZ.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/kzRAd7mj39ZY3FGNrDdZjqx56tn.jpg",
       "overview": "A wounded American soldier fights to survive behind enemy lines during WWII's Battle of the Bulge against the Germans, relying on his instinct, spy craft and a hand-radio to evade capture and find his way back to his unit.",
-      "rating": 7.3,
+      "rating": 6.6,
       "year": "2026",
       "release_date": "2026-06-26",
       "tmdb_id": 1594914
@@ -109,7 +119,7 @@
       "genres": "Comedy, Drama, Romance",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-      "rating": 7.4,
+      "rating": 7.2,
       "year": "2026",
       "release_date": "2026-06-25",
       "tmdb_id": 950028
@@ -119,7 +129,7 @@
       "genres": "Action, Comedy, Documentary",
       "poster": "https://image.tmdb.org/t/p/w500/tfgccePxnswMqhmtxafliLlcCVR.jpg",
       "overview": "The fifth and final installment to Jackass franchise where the crew go on one last insane crusade.",
-      "rating": 7.5,
+      "rating": 7.4,
       "year": "2026",
       "release_date": "2026-06-25",
       "tmdb_id": 1612018
@@ -127,7 +137,7 @@
     {
       "title": "Supergirl",
       "genres": "Action, Adventure, Science Fiction",
-      "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
       "rating": 6.7,
       "year": "2026",
@@ -139,7 +149,7 @@
       "genres": "Adventure, Animation, Comedy, Family, Fantasy",
       "poster": "https://image.tmdb.org/t/p/w500/4LwvU9SZc8QQzW1X1FAPhNbXnEU.jpg",
       "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "rating": 7.5,
+      "rating": 7.6,
       "year": "2026",
       "release_date": "2026-06-24",
       "tmdb_id": 1315772
@@ -169,7 +179,7 @@
       "genres": "Animation, Family, Comedy, Adventure",
       "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
       "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "rating": 7.4,
+      "rating": 8.3,
       "year": "2026",
       "release_date": "2026-06-17",
       "tmdb_id": 1084244
@@ -189,7 +199,7 @@
       "genres": "Mystery, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/bi7Aeaozl51cd5K6vAn8tI1lOW0.jpg",
       "overview": "A computer scientist is invited by a tech billionaire to join his private facility on a Caribbean island to investigate extraterrestrial matter on Earth. When they make contact beyond our world, chaos erupts as we’re left to wonder: do they come in peace?",
-      "rating": 6.6,
+      "rating": 6,
       "year": "2026",
       "release_date": "2026-06-05",
       "tmdb_id": 1083884
@@ -199,7 +209,7 @@
       "genres": "Action, Fantasy, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
       "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "rating": 7.2,
+      "rating": 7.1,
       "year": "2026",
       "release_date": "2026-06-03",
       "tmdb_id": 454639
@@ -209,7 +219,7 @@
       "genres": "Comedy, Family",
       "poster": "https://image.tmdb.org/t/p/w500/4apG9Xk6HQvV48JKEjSUeiebju7.jpg",
       "overview": "After his wife Katie lands a once-in-a-lifetime deal on Shark Tank that takes her on a prolonged business trip - lifelong breadwinner Nate Wilcox now has to fend for his family as a first-time stay-at-home dad.",
-      "rating": 7.6,
+      "rating": 7.1,
       "year": "2026",
       "release_date": "2026-05-29",
       "tmdb_id": 1440050
@@ -219,7 +229,7 @@
       "genres": "Horror, Mystery, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
       "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "rating": 7.1,
+      "rating": 7,
       "year": "2026",
       "release_date": "2026-05-27",
       "tmdb_id": 1083381
@@ -229,7 +239,7 @@
       "genres": "Crime, Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/5OvA3i9wZs5jHu0DCrfmXlzAM67.jpg",
       "overview": "A gifted piano tuner's meticulous skills for tuning pianos lead him to discover an unexpected aptitude for cracking safes, turning his life upside down.",
-      "rating": 7.2,
+      "rating": 7.6,
       "year": "2026",
       "release_date": "2026-05-21",
       "tmdb_id": 1340206
@@ -247,7 +257,7 @@
     {
       "title": "The Mandalorian and Grogu",
       "genres": "Action, Adventure, Science Fiction",
-      "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/uwMKWjcNID0D9jjplsjkQS2OrB4.jpg",
       "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
       "rating": 7.5,
       "year": "2026",
@@ -259,7 +269,7 @@
       "genres": "Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/rCYQGHdoz7qwYsb6wXETJfUfDLX.jpg",
       "overview": "Two sisters embark on an epic quest for revenge, confronting a charged family history that pushes them to extraordinary lengths.",
-      "rating": 5.8,
+      "rating": 5.9,
       "year": "2026",
       "release_date": "2026-05-14",
       "tmdb_id": 1380316
@@ -289,7 +299,7 @@
       "genres": "Action, Fantasy, Adventure",
       "poster": "https://image.tmdb.org/t/p/w500/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
       "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-      "rating": 7.9,
+      "rating": 7.8,
       "year": "2026",
       "release_date": "2026-05-06",
       "tmdb_id": 931285
@@ -297,9 +307,9 @@
     {
       "title": "Seven Snipers",
       "genres": "Action, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/pK6tGCG6UAgUT5FTq3ylGErHxQQ.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qvcq0thb9oPwv6JG2nsTgr9LlLb.jpg",
       "overview": "When a former elite sniper is hunted down by the ruthless warlord who once held her captive, she must fight to the death to protect the daughter she has raised in hiding, on a remote Australian farm.",
-      "rating": 6.1,
+      "rating": 5.9,
       "year": "2026",
       "release_date": "2026-04-30",
       "tmdb_id": 1288341
@@ -307,9 +317,9 @@
     {
       "title": "Deep Water",
       "genres": "Horror, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/ZWHxL2ETItcZzeVsVfs6gv3SZ7.jpg",
       "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
-      "rating": 7.1,
+      "rating": 7.4,
       "year": "2026",
       "release_date": "2026-04-30",
       "tmdb_id": 1127384
@@ -319,7 +329,7 @@
       "genres": "Horror",
       "poster": "https://image.tmdb.org/t/p/w500/x6rHcQFiYcczLQPrmxXPAicm54E.jpg",
       "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
-      "rating": 6.9,
+      "rating": 6.8,
       "year": "2026",
       "release_date": "2026-04-29",
       "tmdb_id": 1430077
@@ -329,7 +339,7 @@
       "genres": "Comedy, Drama",
       "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
       "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "rating": 7.1,
+      "rating": 7,
       "year": "2026",
       "release_date": "2026-04-29",
       "tmdb_id": 1314481
@@ -337,9 +347,9 @@
     {
       "title": "Michael",
       "genres": "Music, Drama",
-      "poster": "https://image.tmdb.org/t/p/w500/2AvgnCwCakNiJqWZqaQhdGjWNey.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/dueFqKLvjftnELZaGYwY7xinfaI.jpg",
       "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "rating": 8.7,
+      "rating": 8.6,
       "year": "2026",
       "release_date": "2026-04-22",
       "tmdb_id": 936075
@@ -349,7 +359,7 @@
       "genres": "Horror, Mystery",
       "poster": "https://image.tmdb.org/t/p/w500/1q308iixueCU4pFtSYugNOevtNx.jpg",
       "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
-      "rating": 7.9,
+      "rating": 7.8,
       "year": "2026",
       "release_date": "2026-04-15",
       "tmdb_id": 1304313
@@ -357,8 +367,8 @@
     {
       "title": "Boulevard",
       "genres": "Romance, Drama",
-      "poster": "https://image.tmdb.org/t/p/w500/hAKOp4AHaDiVdDMlobMNCNgJVD7.jpg",
-      "overview": "New city, new life, and an unexpected encounter with Luke-a boy fueled by adrenaline and haunted by demons. Despite the warnings, Hasley can't stay away. In their 'boulevard,' they find a raw, liberating love. But as his past threatens to destroy them both, Hasley faces a heartbreaking choice: can you save someone who isn't ready to be rescued?",
+      "poster": "https://image.tmdb.org/t/p/w500/sQS3zYJznspQwNSCv9LMc5VHQST.jpg",
+      "overview": "Hasley, a girl with a list of unfulfilled dreams, and Luke, a complex and vulnerable boy marked by a tragic past, find refuge on the boulevard where they discover if love can conquer all.",
       "rating": 7.5,
       "year": "2026",
       "release_date": "2026-04-10",
@@ -389,7 +399,7 @@
       "genres": "Action, Horror, Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/6oI4oQKTWMVUlr8Ivqydp28Ruu6.jpg",
       "overview": "A woman answers a help wanted ad to be a housekeeper in a mysterious New York City high-rise, unaware that she is entering a community that has seen a number of disappearances over the years and may be under the grip of a Satanic cult.",
-      "rating": 7,
+      "rating": 6.9,
       "year": "2026",
       "release_date": "2026-03-25",
       "tmdb_id": 1292695
@@ -399,7 +409,7 @@
       "genres": "Thriller, Horror, Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/13ZcJzSGEqVgDSqsS9U5EkQwPkV.jpg",
       "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
-      "rating": 7.6,
+      "rating": 7.5,
       "year": "2026",
       "release_date": "2026-03-19",
       "tmdb_id": 1266127
@@ -407,9 +417,9 @@
     {
       "title": "Project Hail Mary",
       "genres": "Science Fiction, Adventure",
-      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/iOb2fjXLbpJgyQXe46n1WtGCnaa.jpg",
       "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-      "rating": 8.7,
+      "rating": 8.6,
       "year": "2026",
       "release_date": "2026-03-15",
       "tmdb_id": 687163
@@ -429,9 +439,9 @@
       "genres": "Thriller, Drama, Mystery",
       "poster": "https://image.tmdb.org/t/p/w500/eWb841fMkSNly5gfL9J1N0xzVYI.jpg",
       "overview": "Tommy, a volatile 19-year-old, revels in drugs, parties and violence. After getting separated from his friends on a drunken bender, he is abducted by a shadowy figure. He wakes to find himself imprisoned in the basement of a remote Yorkshire house, inhabited by a very strange family. But what unfolds is not what he could possibly expect.",
-      "rating": 7.2,
+      "rating": 7.3,
       "year": "2026",
-      "release_date": "2026-03-06",
+      "release_date": "2026-03-05",
       "tmdb_id": 1381027
     },
     {
@@ -439,7 +449,7 @@
       "genres": "Adventure, Animation, Comedy, Family, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
       "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-      "rating": 8.2,
+      "rating": 8.1,
       "year": "2026",
       "release_date": "2026-03-04",
       "tmdb_id": 1327819
@@ -459,7 +469,7 @@
       "genres": "Action, Science Fiction, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/rFhKkXhk7ClU03jQ5rHIApJDwev.jpg",
       "overview": "On one last grueling mission during Army Ranger training, a combat engineer must lead his unit in a fight against a giant otherworldly killing machine.",
-      "rating": 7.4,
+      "rating": 7.5,
       "year": "2026",
       "release_date": "2026-02-12",
       "tmdb_id": 1265609
@@ -469,7 +479,7 @@
       "genres": "Animation, Comedy, Family",
       "poster": "https://image.tmdb.org/t/p/w500/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
       "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
-      "rating": 8.1,
+      "rating": 8,
       "year": "2026",
       "release_date": "2026-02-11",
       "tmdb_id": 1297842
@@ -489,7 +499,7 @@
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/dWi4D1rUX1Pg4MaafpwwssqJ9lv.jpg",
       "overview": "Tethered by a frightening conclusion, Maya and the Strangers are locked on an unavoidable, unforgiving collision course — a showdown that proves they’re far from strangers now.",
-      "rating": 6,
+      "rating": 5.9,
       "year": "2026",
       "release_date": "2026-02-05",
       "tmdb_id": 1010755
@@ -507,9 +517,9 @@
     {
       "title": "Shelter",
       "genres": "Action, Crime, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/cv7DeQQ7TOozPoTCBdNJIvWKhU1.jpg",
       "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
-      "rating": 7.8,
+      "rating": 7.7,
       "year": "2026",
       "release_date": "2026-01-28",
       "tmdb_id": 1290821
@@ -529,7 +539,7 @@
       "genres": "Drama, Thriller, Romance",
       "poster": "https://image.tmdb.org/t/p/w500/14e3WaORkMV1YkVpVLL3UJ6WzRC.jpg",
       "overview": "Two couples' daring foray into open relationships leads down a tumultuous path of jealousy, betrayal, and emotional devastation.",
-      "rating": 4.1,
+      "rating": 4.9,
       "year": "2026",
       "release_date": "2026-01-28",
       "tmdb_id": 1351772
@@ -539,7 +549,7 @@
       "genres": "Horror, Science Fiction, Comedy",
       "poster": "https://image.tmdb.org/t/p/w500/3HA2iiq982e01EKXJvPFyfMADVM.jpg",
       "overview": "When a mutating, highly contagious fungus escapes a sealed facility, two employees – joined by a grizzled bioterror operative – must survive the wildest night shift ever to save humanity from extinction.",
-      "rating": 6.8,
+      "rating": 6.7,
       "year": "2026",
       "release_date": "2026-01-22",
       "tmdb_id": 696393
@@ -559,7 +569,7 @@
       "genres": "Mystery, Drama, Horror",
       "poster": "https://image.tmdb.org/t/p/w500/mdw7bSnE11WpwWf3ViXtnavuqiT.jpg",
       "overview": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
-      "rating": 5.4,
+      "rating": 5.3,
       "year": "2026",
       "release_date": "2026-01-21",
       "tmdb_id": 680493
@@ -658,7 +668,7 @@
       "title": "Wicked: For Good",
       "genres": "Fantasy, Adventure, Romance",
       "poster": "https://image.tmdb.org/t/p/w500/si9tolnefLSUKaqQEGz1bWArOaL.jpg",
-      "overview": "As an angry mob rises against the Wicked Witch, Glinda and Elphaba will need to come together one final time. With their singular friendship now the fulcrum of their futures, they will need to truly see each other, with honesty and empathy, if they are to change themselves, and all of Oz, for good.",
+      "overview": "As an angry mob rises against the Wicked Witch, Glinda and Elphaba must unite one last time with honesty and empathy to fulfill their shared destiny and change the fate of Oz forever.",
       "rating": 6.6,
       "year": "2025",
       "release_date": "2025-11-19",
@@ -669,7 +679,7 @@
       "genres": "Crime, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
       "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
-      "rating": 6.5,
+      "rating": 6.4,
       "year": "2025",
       "release_date": "2025-11-12",
       "tmdb_id": 425274
@@ -729,7 +739,7 @@
       "genres": "Action, Crime, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg",
       "overview": "A young Indigenous game warden arrests an infamous poacher only to discover that the poacher knows the location of a plane carrying millions of dollars that has crashed in a frozen lake. When a group of criminals and dirty cops are alerted to the poacher’s whereabouts, the warden and the poacher team up to fight back and escape across the treacherous lake before the ice melts.",
-      "rating": 6.4,
+      "rating": 6.5,
       "year": "2025",
       "release_date": "2025-10-16",
       "tmdb_id": 1242501
@@ -737,7 +747,7 @@
     {
       "title": "Black Phone 2",
       "genres": "Horror, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/gFddBLQ8wj9M9O82iPzgX5KVNHz.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/vBOpqxW0SDhACwEO2LZT29DuNG2.jpg",
       "overview": "Four years after defeating The Grabber, Finney Blake is struggling with life after captivity. When his younger sister Gwen begins receiving calls in her dreams from the Black Phone and seeing disturbing visions of three boys being stalked at a winter camp, the siblings become determined to solve the mystery and confront a killer who has grown more powerful in death and more significant to them than either could imagine.",
       "rating": 6.6,
       "year": "2025",
@@ -787,7 +797,7 @@
     {
       "title": "Chainsaw Man: The Movie - Reze Arc",
       "genres": "Animation, Action, Romance, Fantasy",
-      "poster": "https://image.tmdb.org/t/p/w500/crBfxNvvsQV3rATX12EuX4W9ECo.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/pHyxb2RV5wLlboAwm9ZJ9qTVEDw.jpg",
       "overview": "In a brutal war between devils, hunters, and secret enemies, a mysterious girl named Reze has stepped into Denji's world, and he faces his deadliest battle yet, fueled by love in a world where survival knows no rules.",
       "rating": 8.5,
       "year": "2025",
@@ -839,7 +849,7 @@
       "genres": "Science Fiction, Drama, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/hIhJcFP7QhL85ag401W2eJw9ukL.jpg",
       "overview": "Desperate to save her sister, Abby takes a dangerous job in the remote Georgian wilderness. Stranded in the mountains after her helicopter crashes, she finds hope through John, a mysterious helper radioing from nearby. As he guides her through the harsh conditions, Abby struggles to survive, and her grip on reality falters until she is faced with an impossible choice.",
-      "rating": 5.6,
+      "rating": 5.5,
       "year": "2025",
       "release_date": "2025-08-07",
       "tmdb_id": 1280444
@@ -879,7 +889,7 @@
       "genres": "Mystery, Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/qyGY1k5GqAORsVhfZA3gFKirZWD.jpg",
       "overview": "A troubled man starts working at a retirement home and realizes its residents and caretakers harbor sinister secrets. As he investigates the building and its forbidden fourth floor, he starts to uncover connections to his own past and upbringing as a foster child.",
-      "rating": 6.9,
+      "rating": 6.8,
       "year": "2025",
       "release_date": "2025-07-24",
       "tmdb_id": 926606
@@ -899,7 +909,7 @@
       "genres": "Animation, Action, Fantasy",
       "poster": "https://image.tmdb.org/t/p/w500/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
       "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
-      "rating": 8.7,
+      "rating": 8.8,
       "year": "2025",
       "release_date": "2025-07-18",
       "tmdb_id": 1311031
@@ -949,7 +959,7 @@
       "genres": "Action, Science Fiction, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/oekamLQrwlJjRNmfaBE4llIvkir.jpg",
       "overview": "After the underlying tech for M3GAN is stolen and misused by a powerful defense contractor to create a military-grade weapon known as Amelia, M3GAN's creator Gemma realizes that the only option is to resurrect M3GAN and give her a few upgrades, making her faster, stronger, and more lethal.",
-      "rating": 7.2,
+      "rating": 7.1,
       "year": "2025",
       "release_date": "2025-06-25",
       "tmdb_id": 1071585
@@ -993,16 +1003,6 @@
       "year": "2025",
       "release_date": "2025-06-06",
       "tmdb_id": 1087192
-    },
-    {
-      "title": "Spider-Man: Brand New Day",
-      "genres": "Science Fiction, Action, Adventure",
-      "poster": null,
-      "overview": "",
-      "rating": null,
-      "year": "",
-      "release_date": "2026-07-29",
-      "tmdb_id": 969681
     }
   ]
 }
