@@ -211,6 +211,7 @@ header {
   font-size: 12px;
   font-weight: 300;
   color: var(--white);
+  user-select: none;
 }
 
 .title-suggest-row:hover,
@@ -2225,10 +2226,9 @@ async function autofillFromId() {
 // ---- TITLE AUTOCOMPLETE ----
 function hideTitleSuggest() {
   const suggest = document.getElementById('titleSuggest');
+  if (!suggest) return;
   suggest.hidden = true;
-  suggest.innerHTML = '';
   titleIndex = -1;
-  titleItems = [];
 }
 
 function highlightTitle(i) {
@@ -2270,7 +2270,7 @@ async function searchTitleSuggestions(q) {
     titleIndex = -1;
     suggest.innerHTML = results.map((r, i) => {
       const year = r.release_date ? r.release_date.slice(0, 4) : '';
-      return `<div class="title-suggest-row" onclick="selectTitleSuggestion(${i})" onmouseenter="highlightTitle(${i})">` +
+      return `<div class="title-suggest-row" data-index="${i}" onmouseenter="highlightTitle(${i})">` +
         `<span>${escapeHtml(r.title)}</span>` +
         (year ? `<span class="title-suggest-year">(${escapeHtml(year)})</span>` : '') +
         `</div>`;
@@ -2288,17 +2288,53 @@ function selectTitleSuggestion(i) {
   const titleEl = document.getElementById('addTitle');
   const genresEl = document.getElementById('addGenres');
   const tmdbIdEl = document.getElementById('addTmdbId');
+  const statusEl = document.getElementById('autofillStatus');
+
   titleEl.value = r.title || '';
   tmdbIdEl.value = String(r.id || '');
-  if (!genresEl.value.trim()) {
-    genresEl.value = (r.genre_ids || [])
-      .map(id => TMDB_GENRES[id])
-      .filter(Boolean)
-      .join(', ');
+
+  const mappedGenres = (r.genre_ids || [])
+    .map(id => TMDB_GENRES[id])
+    .filter(Boolean)
+    .join(', ');
+  if (mappedGenres) {
+    genresEl.value = mappedGenres;
   }
+
+  if (statusEl) {
+    statusEl.textContent = 'Selected';
+    statusEl.style.color = 'var(--success)';
+    setTimeout(() => { statusEl.textContent = ''; }, 2000);
+  }
+
   hideTitleSuggest();
   genresEl.focus();
 }
+
+const suggestEl = document.getElementById('titleSuggest');
+
+// Prevent addTitle from blurring when clicking inside suggestion dropdown
+suggestEl.addEventListener('mousedown', (e) => {
+  e.preventDefault();
+  const row = e.target.closest('.title-suggest-row');
+  if (row) {
+    const idx = parseInt(row.dataset.index, 10);
+    if (!isNaN(idx)) {
+      selectTitleSuggestion(idx);
+    }
+  }
+});
+
+// Click fallback for touch / accessibility devices
+suggestEl.addEventListener('click', (e) => {
+  const row = e.target.closest('.title-suggest-row');
+  if (row) {
+    const idx = parseInt(row.dataset.index, 10);
+    if (!isNaN(idx)) {
+      selectTitleSuggestion(idx);
+    }
+  }
+});
 
 document.getElementById('addTitle').addEventListener('input', handleTitleInput);
 
@@ -2323,9 +2359,24 @@ document.getElementById('addTitle').addEventListener('keydown', e => {
   if (e.key === 'Enter') document.getElementById('addGenres').focus();
 });
 
-document.getElementById('addTitle').addEventListener('blur', () => {
-  setTimeout(() => hideTitleSuggest(), 150);
+// Close suggestions when clicking outside
+document.addEventListener('pointerdown', (e) => {
+  const suggest = document.getElementById('titleSuggest');
+  const titleInput = document.getElementById('addTitle');
+  if (suggest && !suggest.hidden && !suggest.contains(e.target) && e.target !== titleInput) {
+    hideTitleSuggest();
+  }
 });
+
+document.getElementById('addTitle').addEventListener('blur', () => {
+  setTimeout(() => {
+    const suggest = document.getElementById('titleSuggest');
+    if (suggest && !suggest.contains(document.activeElement)) {
+      hideTitleSuggest();
+    }
+  }, 250);
+});
+
 document.getElementById('addGenres').addEventListener('keydown', e => {
   if (e.key === 'Enter') addMovie();
 });
