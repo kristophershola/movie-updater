@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T10:31:17.019Z",
+  "generated": "2026-10-08T10:33:26.944Z",
   "total": 100,
   "found": 100,
   "missing": 0,
@@ -13,16 +13,6 @@
       "year": "2026",
       "release_date": "2026-07-29",
       "tmdb_id": 1481343
-    },
-    {
-      "title": "Spider-Man: Brand New Day",
-      "genres": "Science Fiction, Action, Adventure",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "rating": 8.3,
-      "year": "2026",
-      "release_date": "2026-07-29",
-      "tmdb_id": 969681
     },
     {
       "title": "Avatar Aang: The Last Airbender",
@@ -1003,6 +993,16 @@
       "year": "2025",
       "release_date": "2025-06-06",
       "tmdb_id": 1087192
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "genres": "Science Fiction, Action, Adventure",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "rating": 8.3,
+      "year": "2026",
+      "release_date": "2026-07-29",
+      "tmdb_id": 969681
     }
   ]
 }
