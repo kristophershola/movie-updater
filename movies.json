@@ -1,18 +1,18 @@
 {
-  "generated": "2026-10-08T11:02:17.020Z",
+  "generated": "2026-10-08T11:08:15.772Z",
   "total": 100,
   "found": 100,
   "missing": 0,
   "movies": [
     {
-      "title": "Onslaught",
-      "genres": "Action, Horror, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/qg5U3trH8yEk94Iee9pFFxy8VzK.jpg",
-      "overview": "When a rogue squad of genetically engineered super soldiers break loose in the desert, a badass Army sniper must unleash hell to protect her young daughter.",
-      "rating": 5.7,
+      "title": "Fall 2: Deadpoint",
+      "genres": "Thriller",
+      "poster": "https://image.tmdb.org/t/p/w500/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
+      "overview": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
+      "rating": 7.1,
       "year": "2026",
-      "release_date": "2026-09-02",
-      "tmdb_id": 1284046
+      "release_date": "2026-09-01",
+      "tmdb_id": 1101412
     },
     {
       "title": "Insidious: Out of the Further",
@@ -53,6 +53,16 @@
       "year": "2026",
       "release_date": "2026-07-24",
       "tmdb_id": 980431
+    },
+    {
+      "title": "PAW Patrol: The Dino Movie",
+      "genres": "Animation, Adventure, Family, Fantasy, Comedy",
+      "poster": "https://image.tmdb.org/t/p/w500/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
+      "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
+      "rating": 8.2,
+      "year": "2026",
+      "release_date": "2026-07-23",
+      "tmdb_id": 1185806
     },
     {
       "title": "The Dink",
@@ -993,16 +1003,6 @@
       "year": "2025",
       "release_date": "2025-06-24",
       "tmdb_id": 749170
-    },
-    {
-      "title": "Jurassic World Rebirth",
-      "genres": "Science Fiction, Adventure, Action",
-      "poster": "https://image.tmdb.org/t/p/w500/1RICxzeoNCAO5NpcRMIgg1XT6fm.jpg",
-      "overview": "Five years after the events of Jurassic World Dominion, covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure genetic material from the world's three most massive dinosaurs. When Zora's operation intersects with a civilian family whose boating expedition was capsized, they all find themselves stranded on an island where they come face-to-face with a sinister, shocking discovery that's been hidden from the world for decades.",
-      "rating": 6.3,
-      "year": "2025",
-      "release_date": "2025-06-23",
-      "tmdb_id": 1234821
     }
   ]
 }
