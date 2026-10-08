@@ -1,18 +1,18 @@
 {
-  "generated": "2026-10-08T10:35:19.810Z",
+  "generated": "2026-10-08T10:57:52.405Z",
   "total": 100,
   "found": 100,
   "missing": 0,
   "movies": [
     {
-      "title": "The Devil's Mouth",
+      "title": "Insidious: Out of the Further",
       "genres": "Horror, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-      "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-      "rating": 6.5,
+      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, the purgatorial realm of lost souls at the heart of the Insidious universe. When something evil comes after her, Gemma discovers an ability that changes everything: she doesn't just enter The Further, she can bring what lives there back to the real world. Once the demons realize her power, our world becomes their playground.",
+      "rating": 7.5,
       "year": "2026",
-      "release_date": "2026-07-29",
-      "tmdb_id": 1481343
+      "release_date": "2026-08-19",
+      "tmdb_id": 1291595
     },
     {
       "title": "Spider-Man: Brand New Day",
@@ -23,6 +23,16 @@
       "year": "2026",
       "release_date": "2026-07-29",
       "tmdb_id": 969681
+    },
+    {
+      "title": "The Devil's Mouth",
+      "genres": "Horror, Thriller",
+      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
+      "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
+      "rating": 6.5,
+      "year": "2026",
+      "release_date": "2026-07-29",
+      "tmdb_id": 1481343
     },
     {
       "title": "Avatar Aang: The Last Airbender",
@@ -115,16 +125,6 @@
       "tmdb_id": 1594914
     },
     {
-      "title": "The Invite",
-      "genres": "Comedy, Drama, Romance",
-      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-      "rating": 7.2,
-      "year": "2026",
-      "release_date": "2026-06-25",
-      "tmdb_id": 950028
-    },
-    {
       "title": "Jackass: Best and Last",
       "genres": "Action, Comedy, Documentary",
       "poster": "https://image.tmdb.org/t/p/w500/tfgccePxnswMqhmtxafliLlcCVR.jpg",
@@ -135,14 +135,14 @@
       "tmdb_id": 1612018
     },
     {
-      "title": "Supergirl",
-      "genres": "Action, Adventure, Science Fiction",
-      "poster": "https://image.tmdb.org/t/p/w500/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "rating": 6.7,
+      "title": "The Invite",
+      "genres": "Comedy, Drama, Romance",
+      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "rating": 7.2,
       "year": "2026",
-      "release_date": "2026-06-24",
-      "tmdb_id": 1081003
+      "release_date": "2026-06-25",
+      "tmdb_id": 950028
     },
     {
       "title": "Minions & Monsters",
@@ -153,6 +153,16 @@
       "year": "2026",
       "release_date": "2026-06-24",
       "tmdb_id": 1315772
+    },
+    {
+      "title": "Supergirl",
+      "genres": "Action, Adventure, Science Fiction",
+      "poster": "https://image.tmdb.org/t/p/w500/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "rating": 6.7,
+      "year": "2026",
+      "release_date": "2026-06-24",
+      "tmdb_id": 1081003
     },
     {
       "title": "Little Brother",
@@ -245,16 +255,6 @@
       "tmdb_id": 1340206
     },
     {
-      "title": "Tom Clancy's Jack Ryan: Ghost War",
-      "genres": "Action, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/8ehYxUh5MWE41AeE9gkHE8DKzvB.jpg",
-      "overview": "Jack Ryan is reluctantly pulled back into espionage when an international covert mission unravels a deadly conspiracy. Racing against time, he joins CIA allies Mike November & James Greer and sharp MI6 officer Emma Marlowe to battle a rogue black-ops unit in a high-stakes, deeply personal fight.",
-      "rating": 6.9,
-      "year": "2026",
-      "release_date": "2026-05-20",
-      "tmdb_id": 1380291
-    },
-    {
       "title": "The Mandalorian and Grogu",
       "genres": "Action, Adventure, Science Fiction",
       "poster": "https://image.tmdb.org/t/p/w500/uwMKWjcNID0D9jjplsjkQS2OrB4.jpg",
@@ -263,6 +263,16 @@
       "year": "2026",
       "release_date": "2026-05-20",
       "tmdb_id": 1228710
+    },
+    {
+      "title": "Tom Clancy's Jack Ryan: Ghost War",
+      "genres": "Action, Thriller",
+      "poster": "https://image.tmdb.org/t/p/w500/8ehYxUh5MWE41AeE9gkHE8DKzvB.jpg",
+      "overview": "Jack Ryan is reluctantly pulled back into espionage when an international covert mission unravels a deadly conspiracy. Racing against time, he joins CIA allies Mike November & James Greer and sharp MI6 officer Emma Marlowe to battle a rogue black-ops unit in a high-stakes, deeply personal fight.",
+      "rating": 6.9,
+      "year": "2026",
+      "release_date": "2026-05-20",
+      "tmdb_id": 1380291
     },
     {
       "title": "Is God Is",
@@ -305,16 +315,6 @@
       "tmdb_id": 931285
     },
     {
-      "title": "Seven Snipers",
-      "genres": "Action, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/qvcq0thb9oPwv6JG2nsTgr9LlLb.jpg",
-      "overview": "When a former elite sniper is hunted down by the ruthless warlord who once held her captive, she must fight to the death to protect the daughter she has raised in hiding, on a remote Australian farm.",
-      "rating": 5.9,
-      "year": "2026",
-      "release_date": "2026-04-30",
-      "tmdb_id": 1288341
-    },
-    {
       "title": "Deep Water",
       "genres": "Horror, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/ZWHxL2ETItcZzeVsVfs6gv3SZ7.jpg",
@@ -323,6 +323,16 @@
       "year": "2026",
       "release_date": "2026-04-30",
       "tmdb_id": 1127384
+    },
+    {
+      "title": "Seven Snipers",
+      "genres": "Action, Thriller",
+      "poster": "https://image.tmdb.org/t/p/w500/qvcq0thb9oPwv6JG2nsTgr9LlLb.jpg",
+      "overview": "When a former elite sniper is hunted down by the ruthless warlord who once held her captive, she must fight to the death to protect the daughter she has raised in hiding, on a remote Australian farm.",
+      "rating": 5.9,
+      "year": "2026",
+      "release_date": "2026-04-30",
+      "tmdb_id": 1288341
     },
     {
       "title": "Hokum",
@@ -375,16 +385,6 @@
       "tmdb_id": 1595852
     },
     {
-      "title": "The Super Mario Galaxy Movie",
-      "genres": "Family, Comedy, Adventure, Fantasy, Animation",
-      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-      "rating": 8.2,
-      "year": "2026",
-      "release_date": "2026-04-01",
-      "tmdb_id": 1226863
-    },
-    {
       "title": "The Drama",
       "genres": "Romance, Comedy, Drama",
       "poster": "https://image.tmdb.org/t/p/w500/rnIOUhzwJDfgQakx8EjoNyItKgs.jpg",
@@ -393,6 +393,16 @@
       "year": "2026",
       "release_date": "2026-04-01",
       "tmdb_id": 1325734
+    },
+    {
+      "title": "The Super Mario Galaxy Movie",
+      "genres": "Family, Comedy, Adventure, Fantasy, Animation",
+      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "rating": 8.2,
+      "year": "2026",
+      "release_date": "2026-04-01",
+      "tmdb_id": 1226863
     },
     {
       "title": "They Will Kill You",
@@ -475,16 +485,6 @@
       "tmdb_id": 1265609
     },
     {
-      "title": "GOAT",
-      "genres": "Animation, Comedy, Family",
-      "poster": "https://image.tmdb.org/t/p/w500/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
-      "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
-      "rating": 8,
-      "year": "2026",
-      "release_date": "2026-02-11",
-      "tmdb_id": 1297842
-    },
-    {
       "title": "\"Wuthering Heights\"",
       "genres": "Romance, Drama",
       "poster": "https://image.tmdb.org/t/p/w500/3YBce6dTh1D5oCMITXk2S5QhPt.jpg",
@@ -493,6 +493,16 @@
       "year": "2026",
       "release_date": "2026-02-11",
       "tmdb_id": 1316092
+    },
+    {
+      "title": "GOAT",
+      "genres": "Animation, Comedy, Family",
+      "poster": "https://image.tmdb.org/t/p/w500/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+      "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
+      "rating": 8,
+      "year": "2026",
+      "release_date": "2026-02-11",
+      "tmdb_id": 1297842
     },
     {
       "title": "The Strangers: Chapter 3",
@@ -515,6 +525,16 @@
       "tmdb_id": 1116201
     },
     {
+      "title": "Bight",
+      "genres": "Drama, Thriller, Romance",
+      "poster": "https://image.tmdb.org/t/p/w500/14e3WaORkMV1YkVpVLL3UJ6WzRC.jpg",
+      "overview": "Two couples' daring foray into open relationships leads down a tumultuous path of jealousy, betrayal, and emotional devastation.",
+      "rating": 4.9,
+      "year": "2026",
+      "release_date": "2026-01-28",
+      "tmdb_id": 1351772
+    },
+    {
       "title": "Shelter",
       "genres": "Action, Crime, Thriller",
       "poster": "https://image.tmdb.org/t/p/w500/cv7DeQQ7TOozPoTCBdNJIvWKhU1.jpg",
@@ -533,16 +553,6 @@
       "year": "2026",
       "release_date": "2026-01-28",
       "tmdb_id": 1168190
-    },
-    {
-      "title": "Bight",
-      "genres": "Drama, Thriller, Romance",
-      "poster": "https://image.tmdb.org/t/p/w500/14e3WaORkMV1YkVpVLL3UJ6WzRC.jpg",
-      "overview": "Two couples' daring foray into open relationships leads down a tumultuous path of jealousy, betrayal, and emotional devastation.",
-      "rating": 4.9,
-      "year": "2026",
-      "release_date": "2026-01-28",
-      "tmdb_id": 1351772
     },
     {
       "title": "Cold Storage",
@@ -993,16 +1003,6 @@
       "year": "2025",
       "release_date": "2025-06-18",
       "tmdb_id": 1022787
-    },
-    {
-      "title": "How to Train Your Dragon",
-      "genres": "Fantasy, Family, Action, Adventure",
-      "poster": "https://image.tmdb.org/t/p/w500/53dsJ3oEnBhTBVMigWJ9tkA5bzJ.jpg",
-      "overview": "On the rugged isle of Berk, where Vikings and dragons have been bitter enemies for generations, Hiccup stands apart, defying centuries of tradition when he befriends Toothless, a feared Night Fury dragon. Their unlikely bond reveals the true nature of dragons, challenging the very foundations of Viking society.",
-      "rating": 7.9,
-      "year": "2025",
-      "release_date": "2025-06-06",
-      "tmdb_id": 1087192
     }
   ]
 }
