@@ -1,9 +1,19 @@
 {
-  "generated": "2026-10-08T10:57:52.405Z",
+  "generated": "2026-10-08T11:02:17.020Z",
   "total": 100,
   "found": 100,
   "missing": 0,
   "movies": [
+    {
+      "title": "Onslaught",
+      "genres": "Action, Horror, Thriller",
+      "poster": "https://image.tmdb.org/t/p/w500/qg5U3trH8yEk94Iee9pFFxy8VzK.jpg",
+      "overview": "When a rogue squad of genetically engineered super soldiers break loose in the desert, a badass Army sniper must unleash hell to protect her young daughter.",
+      "rating": 5.7,
+      "year": "2026",
+      "release_date": "2026-09-02",
+      "tmdb_id": 1284046
+    },
     {
       "title": "Insidious: Out of the Further",
       "genres": "Horror, Thriller",
@@ -993,16 +1003,6 @@
       "year": "2025",
       "release_date": "2025-06-23",
       "tmdb_id": 1234821
-    },
-    {
-      "title": "Elio",
-      "genres": "Animation, Family, Science Fiction, Adventure, Comedy",
-      "poster": "https://image.tmdb.org/t/p/w500/7z8jDiTZZco9moIKpTUImFtTy7o.jpg",
-      "overview": "Elio, a space fanatic with an active imagination, finds himself on a cosmic misadventure where he must form new bonds with eccentric alien lifeforms, navigate a crisis of intergalactic proportions and somehow discover who he is truly meant to be.",
-      "rating": 6.9,
-      "year": "2025",
-      "release_date": "2025-06-18",
-      "tmdb_id": 1022787
     }
   ]
 }
