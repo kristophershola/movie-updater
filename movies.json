@@ -1,9 +1,39 @@
 {
-  "generated": "2026-10-08T11:08:15.772Z",
+  "generated": "2026-10-13T14:21:21.217Z",
   "total": 100,
   "found": 100,
   "missing": 0,
   "movies": [
+    {
+      "title": "Animals",
+      "genres": "Thriller, Drama",
+      "poster": "https://image.tmdb.org/t/p/w500/iISM36voS1E8gX9BM0DVK0kgi3E.jpg",
+      "overview": "When the son of an L.A. mayoral candidate is kidnapped, he and his wife have a few hours to come up with the ransom payment. With most of their money spent on his political campaign, they have to get their hands dirty and expose a side of their lives they never intended to see the light of day.",
+      "rating": 7.4,
+      "year": "2026",
+      "release_date": "2026-10-09",
+      "tmdb_id": 1236045
+    },
+    {
+      "title": "Matchbox the Movie",
+      "genres": "Action, Comedy, Adventure",
+      "poster": "https://image.tmdb.org/t/p/w500/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
+      "overview": "When a group of former childhood friends reconnect, their reunion takes a wild turn as they stumble upon a dangerous international plot—and must save the world.",
+      "rating": 8,
+      "year": "2026",
+      "release_date": "2026-10-05",
+      "tmdb_id": 1148365
+    },
+    {
+      "title": "Practical Magic 2",
+      "genres": "Romance, Fantasy, Comedy",
+      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
+      "rating": 6.3,
+      "year": "2026",
+      "release_date": "2026-09-09",
+      "tmdb_id": 1302904
+    },
     {
       "title": "Fall 2: Deadpoint",
       "genres": "Thriller",
@@ -13,6 +43,16 @@
       "year": "2026",
       "release_date": "2026-09-01",
       "tmdb_id": 1101412
+    },
+    {
+      "title": "Buddy",
+      "genres": "Horror, Comedy, Fantasy",
+      "poster": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
+      "overview": "A magical, singing orange unicorn holds his cast hostage in a surreal TV-show dimension, as he becomes more and more demented.",
+      "rating": 7.8,
+      "year": "2026",
+      "release_date": "2026-08-27",
+      "tmdb_id": 1514026
     },
     {
       "title": "Insidious: Out of the Further",
@@ -963,46 +1003,6 @@
       "year": "2025",
       "release_date": "2025-07-14",
       "tmdb_id": 1242011
-    },
-    {
-      "title": "Superman",
-      "genres": "Science Fiction, Adventure, Action",
-      "poster": "https://image.tmdb.org/t/p/w500/ldyfo0BKmz5rWtJJKCvwaNS4cJT.jpg",
-      "overview": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
-      "rating": 7.3,
-      "year": "2025",
-      "release_date": "2025-07-09",
-      "tmdb_id": 1061474
-    },
-    {
-      "title": "F1",
-      "genres": "Action, Drama",
-      "poster": "https://image.tmdb.org/t/p/w500/9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
-      "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
-      "rating": 7.8,
-      "year": "2025",
-      "release_date": "2025-06-25",
-      "tmdb_id": 911430
-    },
-    {
-      "title": "M3GAN 2.0",
-      "genres": "Action, Science Fiction, Thriller",
-      "poster": "https://image.tmdb.org/t/p/w500/oekamLQrwlJjRNmfaBE4llIvkir.jpg",
-      "overview": "After the underlying tech for M3GAN is stolen and misused by a powerful defense contractor to create a military-grade weapon known as Amelia, M3GAN's creator Gemma realizes that the only option is to resurrect M3GAN and give her a few upgrades, making her faster, stronger, and more lethal.",
-      "rating": 7.1,
-      "year": "2025",
-      "release_date": "2025-06-25",
-      "tmdb_id": 1071585
-    },
-    {
-      "title": "Heads of State",
-      "genres": "Action, Thriller, Comedy",
-      "poster": "https://image.tmdb.org/t/p/w500/lVgE5oLzf7ABmzyASEVcjYyHI41.jpg",
-      "overview": "The UK Prime Minister and US President have a public rivalry that risks their countries' alliance. But when they become targets of a powerful enemy, they're forced to rely on each other as they go on a wild, multinational run. Allied with Noel, a brilliant MI6 agent, they must find a way to thwart a conspiracy that threatens the free world.",
-      "rating": 6.8,
-      "year": "2025",
-      "release_date": "2025-06-24",
-      "tmdb_id": 749170
     }
   ]
 }
