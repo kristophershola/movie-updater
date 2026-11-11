@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T14:22:16.194Z",
+  "generated": "2026-11-11T10:33:41.939Z",
   "total": 100,
   "found": 100,
   "missing": 0,
@@ -15,6 +15,16 @@
       "tmdb_id": 1236045
     },
     {
+      "title": "Other Mommy",
+      "genres": "Horror",
+      "poster": "https://image.tmdb.org/t/p/w500/kNxRgcTeqeU5jauBackTERoO2De.jpg",
+      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
+      "rating": 5.8,
+      "year": "2026",
+      "release_date": "2026-10-07",
+      "tmdb_id": 1400837
+    },
+    {
       "title": "Matchbox the Movie",
       "genres": "Action, Comedy, Adventure",
       "poster": "https://image.tmdb.org/t/p/w500/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
@@ -23,6 +33,16 @@
       "year": "2026",
       "release_date": "2026-10-05",
       "tmdb_id": 1148365
+    },
+    {
+      "title": "Primetime",
+      "genres": "Thriller, Drama, Crime",
+      "poster": "https://image.tmdb.org/t/p/w500/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+      "overview": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
+      "rating": 6.8,
+      "year": "2026",
+      "release_date": "2026-09-23",
+      "tmdb_id": 1375441
     },
     {
       "title": "Practical Magic 2",
@@ -113,6 +133,16 @@
       "year": "2026",
       "release_date": "2026-07-23",
       "tmdb_id": 1361774
+    },
+    {
+      "title": "The Odyssey",
+      "genres": "Adventure, Action, Fantasy",
+      "poster": "https://image.tmdb.org/t/p/w500/krVa7rKCQb4OBfsr2LTJv4rTz5q.jpg",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "rating": 8,
+      "year": "2026",
+      "release_date": "2026-07-15",
+      "tmdb_id": 1368337
     },
     {
       "title": "Ikka",
@@ -973,36 +1003,6 @@
       "year": "2025",
       "release_date": "2025-07-23",
       "tmdb_id": 617126
-    },
-    {
-      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
-      "genres": "Animation, Action, Fantasy",
-      "poster": "https://image.tmdb.org/t/p/w500/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
-      "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
-      "rating": 8.8,
-      "year": "2025",
-      "release_date": "2025-07-18",
-      "tmdb_id": 1311031
-    },
-    {
-      "title": "Saiyaara",
-      "genres": "Romance, Drama, Music",
-      "poster": "https://image.tmdb.org/t/p/w500/hQBIsi3ZfBYEayMc3GhcEmJVkss.jpg",
-      "overview": "Two artistic souls find harmony through music despite their contrasting worlds. As feelings deepen, age and circumstances challenge their undeniable bond.",
-      "rating": 6.4,
-      "year": "2025",
-      "release_date": "2025-07-18",
-      "tmdb_id": 1241634
-    },
-    {
-      "title": "Together",
-      "genres": "Horror, Romance",
-      "poster": "https://image.tmdb.org/t/p/w500/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
-      "overview": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
-      "rating": 6.9,
-      "year": "2025",
-      "release_date": "2025-07-14",
-      "tmdb_id": 1242011
     }
   ]
 }
